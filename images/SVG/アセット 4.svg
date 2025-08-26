@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #231815;
+      }
+
+      .cls-3 {
+        fill: url(#_6_dpi_30_);
+      }
+    </style>
+    <pattern id="_6_dpi_30_" data-name="6 dpi 30%" x="0" y="0" width="48" height="48" patternTransform="translate(6020.5 6732.5)" patternUnits="userSpaceOnUse" viewBox="0 0 48 48">
+      <g>
+        <rect class="cls-1" y="0" width="48" height="48"/>
+        <g>
+          <circle class="cls-2" cx="24" cy="48" r="3.6"/>
+          <circle class="cls-2" cx="48" cy="48" r="3.6"/>
+          <circle class="cls-2" cx="24" cy="24" r="3.6"/>
+          <circle class="cls-2" cx="48" cy="24" r="3.6"/>
+          <circle class="cls-2" cx="36" cy="36" r="3.6"/>
+          <circle class="cls-2" cx="12" cy="36" r="3.6"/>
+          <circle class="cls-2" cx="36" cy="12" r="3.6"/>
+          <circle class="cls-2" cx="12" cy="12" r="3.6"/>
+        </g>
+        <g>
+          <circle class="cls-2" cy="48" r="3.6"/>
+          <circle class="cls-2" cy="24" r="3.6"/>
+        </g>
+        <g>
+          <circle class="cls-2" cx="24" cy="0" r="3.6"/>
+          <circle class="cls-2" cx="48" cy="0" r="3.6"/>
+        </g>
+        <circle class="cls-2" cy="0" r="3.6"/>
+      </g>
+    </pattern>
+  </defs>
+  <g id="_レイアウト" data-name="レイアウト">
+    <rect class="cls-3" width="172" height="256"/>
+  </g>
+</svg>

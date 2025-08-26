@@ -20,166 +20,460 @@ h3 {
     font-size: 40px;
 }
 
-.fv {
+/* ファーストビュー */
+#fv {
+    max-width: 1920px;
+    height: 800px;
     display: block;
     text-align: center;
+    position: relative;
+    margin-bottom: 162px;
 }
 
-.fv img {
+#fv .fv_main_img {
+    width: 25.8%;
+    position: absolute;
+    right: 37.2%;
+    top: 10%;
+    z-index: -50;
+}
 
-    width: 497px;
-    height: 718px;
+#fv .right_gray_triangle {
+    width: 6%;
+    position: absolute;
+    right: 4.3%;
+    top: 40.9%;
+}
+
+#fv .right_black_triangle {
+    width: 3.8%;
+    position: absolute;
+    right: 10.5%;
+    top: 3%;
+}
+
+#fv .left_black_triangle {
+    width: 3.9%;
+    position: absolute;
+    left: 29.6%;
+    top: 67.6%;
+}
+
+#fv .left_gray_circle {
+    width: 2%;
+    position: absolute;
+    left: 18.1%;
+    top: 48.1%;
+}
+
+#fv .center_darkgray_triangle {
+    width: 2.1%;
+    position: absolute;
+    right: 32.9%;
+    top: 25.6%;
+}
+
+#fv .center_black_triangle {
+    width: 3%;
+    position: absolute;
+    right: 33.7%;
+    top: 28.1%;
+}
+
+#fv .center_darkgray_triangle2 {
+    width: 3.8%;
+    position: absolute;
+    right: 35.6%;
+    top: 34.6%;
+}
+
+#fv .right_orange_square {
+    width: 9.4%;
+    position: absolute;
+    right: 27.2%;
+    top: 42.7%;
+}
+
+#fv .right_black_triangle2 {
+    width: 3.9%;
+    position: absolute;
+    right: 17.7%;
+    top: 8.4%;
+}
+
+#fv .left_orange_square {
+    width: 9%;
+    position: absolute;
+    left: 31.8%;
+    top: 82%;
+    z-index: -80;
+}
+
+#fv .right_gray_circle {
+    width: 2%;
+    position: absolute;
+    right: 23.2%;
+    top: 26.6%;
+}
+
+#fv .center_orange_circle {
+    width: 30%;
+    position: absolute;
+    right: 34.2%;
+    top: 1.8%;
+    z-index: -100;
+}
+
+#fv .center_gradient_square {
+    width: 30%;
+    position: absolute;
+    left: 24.8%;
+    top: 93%;
+}
+
+#fv .right_gradient_square {
+    width: 26.3%;
+    position: absolute;
+    right: 29.5%;
+    top: 47.6%;
+    z-index: -60;
+}
+
+#fv .black_square {
+    width: 10%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+#fv .line {
+    width: 10%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+#fv .left_cross_line {
+    width: 5.7%;
+    position: absolute;
+    left: 16.9%;
+    top: 68%;
+}
+
+#fv .center_leaf {
+    width: 33%;
+    position: absolute;
+    right: 19.3%;
+    top: 58%;
+}
+
+#fv .left_leaf {
+    width: 31.9%;
+    position: absolute;
+    left: 21.9%;
+    top: 14.9%;
+    z-index: -70;
+}
+
+#fv .left_dot {
+    width: 4%;
+    position: absolute;
+    left: 41%;
+    top: 17%;
+    z-index: -65;
+}
+
+#fv .right_dot {
+    width: 13%;
+    position: absolute;
+    right: 31%;
+    top: 47%;
+    z-index: -60;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: Bradley Hand Bold;
+    font-weight: bold;
+    position: absolute;
+    left: 19.2%;
+    top: 59.5%;
 }
 
 .scrollbar p {
     font-size: 14px;
+    position: absolute;
+    left: 5.9%;
+    top: 68.8%;
 }
 
-.scroll_element {
-    position: relative;
-}
-
-.scroll_element ::after {
+.scrollbar ::after {
     content: "";
     position: absolute;
-    top: 584px;
-    left: 130px;
+    top: 220.4%;
+    left: 44.7%;
     width: 1px;
     height: 200px;
     background-color: #666666;
 }
 
-#header {
-    display: grid;
-    grid-template-columns: 460px 1460px;
-    /* display: flex; */
-    max-width: 1920px;
-    margin: 0, auto;
-}
-
-.header_wrap {
+/* header */
+#header .header_wrap {
     position: fixed;
-    top: 180px;
+    top: 60px;
     left: 106px;
-    width: 460px;
+    /* width: 460px; */
     height: 100vh;
     box-sizing: border-box;
     /* margin-left: 106px; */
 }
 
-.pc_nav li {
+#header .pc_nav li {
     display: block;
     margin-bottom: 36px;
 }
 
-/* .sns_wrap {
+#header .sns_wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+}
 
-.sns_icon img {
+#header .sns_icon img {
     display: block;
     width: 55px;
     margin-bottom: 54px;
 }
 
-.copyright {
+#header .copyright {
     font-size: 14px;
     writing-mode: vertical-rl;
     text-align: center;
-    margin-top: 90px;
+    /* margin-top: 90px; */
 }
 
+/* content */
 .content {
-    margin-left: 460px;
-    max-width: calc(1920px-460px);
-    min-width: 100vh;
+    padding-left: 23%;
+    max-width: calc(1920px - 460px);
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 .top {
+    display: flex;
+    flex-direction: column;
     text-align: right;
+    margin-bottom: 162px;
 }
 
-.main_text {
+.top .main_text {
+    display: inline-block;
+    text-align: left;
     font-size: 88px;
     line-height: 1.36;
     letter-spacing: 0.18em;
     font-family: "小塚ゴシック Pr6N", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+    padding-bottom: 54px;
 }
 
-.sub_text {
+.top .sub_text {
+    display: inline-block;
+    text-align: left;
     font-size: 20px;
     line-height: 2;
     letter-spacing: 0.14em;
 }
 
-
-#about {
-    display: flex;
+.top .sub_text span {
+    font-weight: bold;
 }
 
-.job_titel {
+/* about */
+#about {
+    display: flex;
+    margin-bottom: 252px;
+}
+
+#about .job_titel {
     font-size: 14px;
     padding-bottom: 18px;
 }
 
-.my_name {
+#about .my_name {
     font-size: 32px;
     padding-bottom: 108px;
 }
 
-.my_explanation {
+#about .my_explanation {
     font-size: 18px;
     line-height: 2.2;
     letter-spacing: 0.14em;
     padding-bottom: 54px;
 }
 
-.mprofile_btn {
-    font-size: 32px;
-}
-
-
-#works p {
-    margin-bottom: 18px;
-}
-
-.works_my_icon {
-    width: 45px;
-}
-
-.works_btn {
-    font-size: 32px;
-}
-
-
-.skill_my_icon {
-    width: 60px;
-}
-
-.skill_container {
+#about .my {
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
 }
 
-.skill_container p {
+#about .my .my_img {
+    width: 75.7%;
+    margin-bottom: 36px;
+    display: inline-block;
+}
+
+#about .profile_btn {
+    display: inline-block;
+    position: relative;
+}
+
+#about .profile_btn button {
+    font-size: 32px;
+    color: #000000;
+    width: 400px;
+    height: 80px;
+    background: none;
+    border: 2px solid #000000;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#about .profile_btn .about_btn_dot {
+    width: 25%;
+    position: absolute;
+    top: 27%;
+    left: -12%;
+}
+
+/* works */
+#works {
+    margin-bottom: 252px;
+    position: relative;
+}
+
+
+#works h2 {
+    text-align: start;
+}
+
+#works .works_my_pic {
+    width: 45px;
+    position: absolute;
+    top: -1.7%;
+    left: 2%;
+    z-index: 1;
+}
+
+#works p {
+    padding-bottom: 18px;
+}
+
+#works .work5 {
+    display: flex;
+    padding-bottom: 198px;
+}
+
+#works .work5 img {
+    padding-bottom: 36px;
+}
+
+#works .cafe_website {
+    display: flex;
+    padding-bottom: 198px;
+}
+
+#works .cafe_website img {
+    padding-bottom: 36px;
+}
+
+#works .portfoliosite {
+    display: flex;
+    padding-bottom: 162px;
+}
+
+#works .portfoliosite img {
+    padding-bottom: 36px;
+}
+
+#works .works_btn {
+    text-align: end;
+    padding-right: 20%;
+}
+
+#works .works_btn button {
+    /* outline: none; */
+    font-size: 32px;
+    color: #ffffff;
+    width: 400px;
+    height: 80px;
+    background: #666666;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+/* skill */
+#skill {
+    margin-bottom: 252px;
+    position: relative;
+}
+
+#skill .skill_heading {
+    display: flex;
+    justify-content: center;
+}
+
+#skill .skill_my_icon {
+    width: 60px;
+    position: absolute;
+    top: 2%;
+    left: 32%;
+}
+
+#skill .skill_container {
+    text-align: center;
+}
+
+#skill .skill_container p {
     font-size: 18px;
     line-height: 2.22;
     letter-spacing: 0.14em;
     margin-bottom: 108px;
 }
 
-.skill_box {
+#skill .skill_container .mouse_icon {
+    width: 15%;
+    padding-bottom: 90px;
+}
+
+#skill .skill_container .pc_icon {
+    width: 15%;
+    padding-bottom: 90px;
+}
+
+#skill .skill_box {
     margin-bottom: 126px;
 }
 
-.skill_box ul {
+#skill .skill_box ul {
     font-size: 24px;
     display: flex;
     justify-content: center;
-    gap: 126px;
+    flex-wrap: wrap;
+    row-gap: 54px;
 }
 
+#skill .skill_box ul li {
+    border-right: 1px solid #000;
+    padding: 0 70px;
+}
+
+#skill .skill_box ul li :last-child {
+    border-right: none;
+}
+
+/* contact */
 #contact {
     text-align: center;
 }
@@ -191,14 +485,63 @@ h3 {
     margin-bottom: 90px;
 }
 
-.contact_btn {
+#contact .contact_btn button {
+    font-size: 32px;
+    color: #000000;
+    width: 600px;
+    height: 80px;
+    background: none;
+    border: 2px solid #000000;
+    cursor: pointer;
+    padding: 10px 20px;
     margin-bottom: 36px;
 }
 
-.line_btn {
+#contact .contact_btn {
+    position: relative;
+}
+
+#contact .contact_btn ::after {
+    content: "";
+    position: absolute;
+    top: 29%;
+    left: 76%;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border: 10px solid transparent;
+    border-left: 10px solid #000000;
+}
+
+#contact .line_btn button {
+    font-size: 32px;
+    color: #000000;
+    width: 400px;
+    height: 80px;
+    background: none;
+    border: 2px solid #000000;
+    cursor: pointer;
+    padding: 10px 20px;
     margin-bottom: 126px;
 }
 
+#contact .line_btn {
+    position: relative;
+}
+
+#contact .line_btn ::after {
+    content: "";
+    position: absolute;
+    top: 18%;
+    left: 66%;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border: 10px solid transparent;
+    border-left: 10px solid #000000;
+}
+
+/* footer */
 #footer {
     max-width: 1920px;
     height: 100px;
@@ -207,27 +550,108 @@ h3 {
 
 
 
+
+/* about.html */
+.about_page {
+    text-align: center;
+}
+
+.about_page .about_profile_img {
+    width: 32.2%;
+    margin-bottom: 90px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+#my_life section {
+    display: flex;
+    gap: 72px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+#policy .policy_ring {
+    width: 20.7%;
+}
+
+#works .comment {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 126px;
+}
+
+.contact_btn_orange {
+    text-align: center;
+    margin-bottom: 126px;
+}
+
+.contact_btn_orange button {
+    font-size: 40px;
+    color: #ffffff;
+    width: 616px;
+    height: 104px;
+    background: #f15a24;
+    opacity: 0.7;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+
+
+
+
 /* お疲れ様です！
-やってみたこととして、
-・ トップページ全体のHTML
-・フォントサイズ、行高、カーニングの設定
-・大まかな余白　　です。
+2日前にイラレのデータが全てバグってしまい、
+森田先生にも確認いただきましたが、現状、復旧できていない状況で、
+文字サイズやオブジェクトのサイズ・余白感が全て分からなくなってしまっています。
+元には戻らないっぽいので１から作り直さないといけないと思っています。泣。。。
 
-教えていただきたいこと
-①Illustratorでの書き出しの際、一部書き出しが上手くできていない箇所があります。
-次回、画面共有で見ていただきたいです。
+幸いにも、バグが起きる前にトップページだけですが、
+文字サイズ・大体の余白などコードにできていた為、
+下層ページもそこに合わせて作ろうと思います。
 
-②FV以外、左から460pxの余白（ナビゲーションメニュー）
-＋1460pxコンテンツ幅のデザインになっていて、
-gridを使ってやってみましたが、使い方は大丈夫でしょうか？
+ただ、ファーストビューのオブジェクトやボタン・画像のサイズや位置が
+正確な数値が分からず、一旦、感覚で入れています。
 
-gridレイアウトについて理解が十分ではないので
-こちらも次回、使い方や気を付ける点など教えていただきたいです。
 
-③FVの画像は入れてみたんですが、作り方が分からず手をつけれていません。
-一つ一つ、上からと左から（右から）と位置を指定して行くのかなと想像はしていますが、
-どんな風に作って行くべきか考え方を教えていただきたいです。
+トップページ、要素の入れ込みは完了し、下記上手くいっていない箇所教えていただきたいです。
+↓
+①全体
+h2.h3や他一部、別のフォントを使用しており、
+元々、使っていたフォントがAdobeフォントでは無かった為、Adobeフォントの中から似たフォントを探しました。
+調べて、HTMLとreset.cssで必要な記述をしたつもりなのですが、反映されていない様です。
+次回、面談の日に教えていただきたいです。
 
-他、HTMLの構成など全体的に確認をお願いしたいです。
-よろしくお願いいたします。
-*/
+②ファーストビュー
+オブジェクトのwidthと位置を％（パーセント）で指定していますが、
+画面幅が変わると全て位置が崩れてしまっています。
+どこが原因で崩れてしまっているのでしょうか？
+
+③コンセプト
+要素は右寄せ・文字は左揃えにしたいのですが、
+どうしても、左に配置できません。
+親要素の
+.top {display: flex;
+      flex-direction: column;
+      ext-align: right;
+}
+pタグにdisplay: inline-block;
+      text-align: left;　を試してみています。
+
+④サービス＆スキル
+使用ツールなどの枠は、デザインとコーディング共通で指定しており、
+４つ目以降折り返す様に記述したんですが、
+どの画面幅で見ても上４つ・下３つの表示にしたいです。
+どのような考え方で作れますか？
+
+
+他、全体的にみていただきたいのと、下層ページも少し進めています。
+そちらも確認をお願いしたいです。
+
+添削よろしくお願いいたします。
+
+ */

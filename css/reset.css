@@ -7,8 +7,6 @@
 html,
 body,
 h1,
-h2,
-h3,
 p,
 dl,
 dt,
@@ -25,7 +23,10 @@ li {
 }
 
 h2 h3 {
-    font-family: Lava Telugu;
+    font-family: "warbler-text", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
 }
 
 h3 a {
@@ -44,4 +45,12 @@ img {
     max-width: 100%;
     vertical-align: bottom;
     border: none;
+}
+
+button {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+button :hover {
+    opacity: 0.5;
 }

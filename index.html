@@ -5,37 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <style>
+        @import url("https://use.typekit.net/kuw7orj.css");
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/kuw7orj.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!-- FV -->
-    <div class="fv">
-        <img src="./images/2x/fv_main_pic@2x.png" alt="FVメインの写真">
-        <!-- <img src="./images/SVG/アセット 10.svg" alt="三角">
-        <img src="./images/SVG/アセット 11.svg" alt="三角">
-        <img src="./images/SVG/アセット 12.svg" alt="三角">
-        <img src="./images/SVG/アセット 13.svg" alt="丸">
-        <img src="./images/SVG/アセット 14.svg" alt="三角">
-        <img src="./images/SVG/アセット 15.svg" alt="三角">
-        <img src="./images/SVG/アセット 16.svg" alt="三角">
-        <img src="./images/SVG/アセット 17.svg" alt="四角オレンジ右横">
-        <img src="./images/SVG/アセット 18.svg" alt="三角">
-        <img src="./images/SVG/アセット 19.svg" alt="四角オレンジ左斜め">
-        <img src="./images/SVG/アセット 20.svg" alt="丸">
-        <img src="./images/SVG/アセット 59.svg" alt="中央丸">
-        <img src="./images/SVG/アセット 60.svg" alt="中央四角グラデーション">
-        <img src="./images/SVG/アセット 61.svg" alt="四角グラデーション">
-        <img src="./images/SVG/アセット 62.svg" alt="四角黒斜め">
-        <img src="./images/SVG/アセット 63.svg" alt="線"> -->
+    <!-- ファーストビュー -->
+    <div id="fv">
+        <img src="./images/2x/fv_main_pic@2x.png" alt="FVメインの写真" class="fv_main_img">
+        <img src="./images/SVG/アセット 10.svg" alt="三角" class="right_gray_triangle">
+        <img src="./images/SVG/アセット 11.svg" alt="三角" class="right_black_triangle">
+        <img src="./images/SVG/アセット 12.svg" alt="三角" class="left_black_triangle">
+        <img src="./images/SVG/アセット 13.svg" alt="丸" class="left_gray_circle">
+        <img src="./images/SVG/アセット 14.svg" alt="三角" class="center_darkgray_triangle">
+        <img src="./images/SVG/アセット 15.svg" alt="三角" class="center_black_triangle">
+        <img src="./images/SVG/アセット 16.svg" alt="三角" class="center_darkgray_triangle2">
+        <img src="./images/SVG/アセット 17.svg" alt="四角オレンジ右横" class="right_orange_square">
+        <img src="./images/SVG/アセット 18.svg" alt="三角" class="right_black_triangle2">
+        <img src="./images/SVG/アセット 19.svg" alt="四角オレンジ左斜め" class="left_orange_square">
+        <img src="./images/SVG/アセット 20.svg" alt="丸" class="right_gray_circle">
+        <img src="./images/SVG/アセット 59.svg" alt="中央丸" class="center_orange_circle">
+        <img src="./images/SVG/アセット 60.svg" alt="中央四角グラデーション" class="center_gradient_square">
+        <img src="./images/SVG/アセット 61.svg" alt="四角グラデーション" class="right_gradient_square">
+        <img src="./images/SVG/アセット 62.svg" alt="四角黒斜め" class="black_square">
+        <img src="./images/SVG/アセット 63.svg" alt="線" class="line">
+        <img src="./images/SVG/アセット 66.svg" alt="線クロス" class="left_cross_line">
+        <img src="./images/2x/leaf_illustration@2x.png" alt="葉" class="center_leaf">
+        <img src="./images/2x/a_leaf_illustration2x.png" alt="ヤシの葉" class="left_leaf">
+        <img src="./images/SVG/アセット 2.svg" alt="左側ドット" class="left_dot">
+        <img src="./images/SVG/アセット 4.svg" alt="ドット" class="right_dot">
+
         <h1>Ami Umegawa portfolio</h1>
+
+        <div class="scrollbar">
+            <p>scroll</p>
+        </div>
     </div>
 
-    <div class="scrollbar">
-        <p>scroll</p>
-        <div class="scroll_element"></div>
-    </div>
 
     <header id="header">
         <div class="header_wrap">
@@ -95,76 +105,81 @@
             </div>
             <div class="my">
                 <div class="my_img">
-                    <img src="" alt="プロフィール写真">
+                    <img src="./images/2x/top_profile_pic@2x.png" alt="プロフィール写真">
                 </div>
                 <div class="profile_btn">
-                    <button type="button" onclick="location.href='URL'">View more</button>
-                    <!-- →は擬似要素で入れる -->
+                    <button type="button" onclick="location.href='./about.html'">View more</button>
+                    <img src="./images/SVG/about_btn_dot.svg" alt="ボタンドット柄" class="about_btn_dot">
                 </div>
             </div>
         </section>
 
 
         <section id="works">
-            <div class="works_my_icon">
-                <img src="./images/2x/works_my_pic@2x.png" alt="works上アイコン">
-            </div>
+            <img src="./images/2x/works_my_pic@2x.png" alt="works上アイコン" class="works_my_pic">
             <h2><span>W</span>orks</h2>
 
             <div class="work5">
-                <a href="">
-                    <img src="./images/1x/work5_website-80.jpg" alt="work5モック画像">
-                </a>
+                <div>
+                    <a href="">
+                        <img src="./images/1x/work5_website-80.jpg" alt="work5モック画像">
+                    </a>
+                    <p>LIFE hair design 様</p>
+                    <p>Webサイト</p>
+                    <p>担当範囲：デザイン</p>
+                </div>
                 <a href="">
                     <img src="" alt="work5sp動画">
                 </a>
                 <a href="">
                     <img src="./images/1x/work5_sheet-80.jpg" alt="work5モックシート">
                 </a>
-                <p>LIFE hair design 様</p>
-                <p>Webサイト</p>
-                <p>担当範囲：デザイン</p>
             </div>
             <div class="cafe_website">
                 <a href="">
                     <img src="" alt="カフェWebサイト動画">
                 </a>
-                <a href="">
-                    <img src="./images/1x/cafe_website-80.jpg" alt="カフェWebサイトモック画像">
-                </a>
-                <p>DESIGN CAFE 様</p>
-                <p>Webサイト</p>
-                <p>担当範囲：コーディング</p>
+                <div>
+                    <a href="">
+                        <img src="./images/1x/cafe_website-80.jpg" alt="カフェWebサイトモック画像">
+                    </a>
+                    <p>DESIGN CAFE 様</p>
+                    <p>Webサイト</p>
+                    <p>担当範囲：コーディング</p>
+                </div>
             </div>
             <div class="portfoliosite">
-                <a href="">
-                    <img src="./images/1x/portfoliosite-80.jpg" alt="ポートフォリオサイトモック画像">
-                </a>
+                <div>
+                    <a href="">
+                        <img src="./images/1x/portfoliosite-80.jpg" alt="ポートフォリオサイトモック画像">
+                    </a>
+                    <p>ポートフォリオサイト</p>
+                    <p>Webサイト</p>
+                    <p>担当範囲：デザイン・コーディング</p>
+                </div>
                 <a href="">
                     <img src="" alt="ポートフォリオサイトsp動画">
                 </a>
                 <a href="">
                     <img src="" alt="ポートフォリオサイト動画">
                 </a>
-                <p>ポートフォリオサイト</p>
-                <p>Webサイト</p>
-                <p>担当範囲：デザイン・コーディング</p>
             </div>
             <div class="works_btn">
                 <button type="button" onclick="location.href='URL'">制作実績一覧</button>
-                <!-- →は擬似要素で入れる -->
             </div>
         </section>
 
 
         <section id="skill">
-            <div class="skill_my_icon">
-                <img src="./images/2x/service_my_pic@2x.png" alt="service横アイコン">
+            <div class="skill_heading">
+                <div class="skill_my_icon">
+                    <img src="./images/2x/service_my_pic@2x.png" alt="service横アイコン" class="service_my_pic">
+                </div>
+                <h2><span>S</span>ervice &<span>S</span>kill</h2>
             </div>
-            <h2><span>S</span>ervice &<span>S</span>kill</h2>
             <div class="skill_container">
                 <h3>Design</h3>
-                <img src="./images/SVG/mouse_icon.svg" alt="マウスアイコン">
+                <img src="./images/SVG/mouse_icon.svg" alt="マウスアイコン" class="mouse_icon">
                 <p>ホームページ制作を中心に<br>
                     LP（ランディングページ）/ バナーデザイン<br>
                     名刺・チラシ作成も承っております。<br>
@@ -182,7 +197,7 @@
             </div>
             <div class="skill_container">
                 <h3>Coding</h3>
-                <img src="./images/SVG/pc_icon.svg" alt="pcアイコン">
+                <img src="./images/SVG/pc_icon.svg" alt="pcアイコン" class="pc_icon">
                 <p>HTML・CSSを用いてサイトをコーディングいたします。<br>
                     JavaScript・jQueryを用いて動きのあるデザインも対応可。<br>
                     どんな媒体からでも見やすいレスポンシブにも対応し<br>
@@ -213,7 +228,6 @@
             </p>
             <div class="contact_btn">
                 <button type="button" onclick="location.href='URL'">お問い合わせはこちらから</button>
-                <!-- ▶︎は擬似要素で入れる -->
             </div>
             <p class="contact_note">納品までの流れもご確認ください</p>
             <!-- <>は擬似要素で入れる -->
@@ -224,7 +238,6 @@
             </p>
             <div class="line_btn">
                 <button type="button" onclick="location.href='URL'">公式LINE</button>
-                <!-- ▶︎は擬似要素で入れる -->
             </div>
         </section>
     </main>
