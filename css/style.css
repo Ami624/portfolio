@@ -403,13 +403,11 @@ h1 {
 }
 
 #works .works_btn button {
-    /* outline: none; */
     font-size: 32px;
     color: #ffffff;
     width: 400px;
     height: 80px;
     background: #666666;
-    cursor: pointer;
     padding: 10px 20px;
 }
 
@@ -492,7 +490,6 @@ h1 {
     height: 80px;
     background: none;
     border: 2px solid #000000;
-    cursor: pointer;
     padding: 10px 20px;
     margin-bottom: 36px;
 }
@@ -520,7 +517,6 @@ h1 {
     height: 80px;
     background: none;
     border: 2px solid #000000;
-    cursor: pointer;
     padding: 10px 20px;
     margin-bottom: 126px;
 }
@@ -596,10 +592,34 @@ h5 {
     height: 104px;
     background: #f15a24;
     opacity: 0.7;
-    cursor: pointer;
     padding: 10px 20px;
 }
 
+
+/* works.html */
+.works_explain_btn {
+    position: relative;
+
+}
+
+.works_explain_btn button {
+    font-size: 24px;
+    color: #000000;
+    width: 320px;
+    height: 56px;
+    background: none;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+}
+
+.works_explain_btn ::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 86%;
+    width: 80px;
+    border: 1px solid #000000;
+}
 
 
 
@@ -655,3 +675,15 @@ pタグにdisplay: inline-block;
 添削よろしくお願いいたします。
 
  */
+
+/* 追加で教えていただきたい点
+ ・h1~h6 見出しタグの概念・使い方
+ ・css class名の書き方（詳しく書かない方がいい場合もあるのか）
+ ・about。htmlのページ指定しているタグは適切か
+ ・TOPページの配置で下層ページで写真だけ変えたい場合
+                 マージンだけ少し変わる場合、
+　　　　　　　　　　テキストの位置が左側から中央になる場合、
+ ・TOPページファーストビューではheaderを表示しない←どう検索したら出てくるか
+ ・
+ を再度確認させていただきたいです
+  */
