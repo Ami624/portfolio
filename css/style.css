@@ -16,7 +16,8 @@ h2 span {
     font-size: 112px;
 }
 
-h3 {
+h3,
+.about_body h4 {
     font-size: 40px;
 }
 
@@ -31,115 +32,115 @@ h3 {
 }
 
 #fv .fv_main_img {
-    width: 25.8%;
+    width: 497px;
     position: absolute;
-    right: 37.2%;
-    top: 10%;
+    right: 732px;
+    top: 103px;
     z-index: -50;
 }
 
 #fv .right_gray_triangle {
-    width: 6%;
+    width: 118px;
     position: absolute;
     right: 4.3%;
     top: 40.9%;
 }
 
 #fv .right_black_triangle {
-    width: 3.8%;
+    width: 73px;
     position: absolute;
     right: 10.5%;
     top: 3%;
 }
 
 #fv .left_black_triangle {
-    width: 3.9%;
+    width: 77px;
     position: absolute;
-    left: 29.6%;
-    top: 67.6%;
+    left: 569px;
+    top: 537px;
 }
 
 #fv .left_gray_circle {
-    width: 2%;
+    width: 45px;
     position: absolute;
-    left: 18.1%;
-    top: 48.1%;
+    left: 349px;
+    top: 384px;
 }
 
 #fv .center_darkgray_triangle {
-    width: 2.1%;
+    width: 42px;
     position: absolute;
-    right: 32.9%;
-    top: 25.6%;
+    right: 630px;
+    top: 199px;
 }
 
 #fv .center_black_triangle {
-    width: 3%;
+    width: 59px;
     position: absolute;
-    right: 33.7%;
-    top: 28.1%;
+    right: 645px;
+    top: 231px;
 }
 
 #fv .center_darkgray_triangle2 {
-    width: 3.8%;
+    width: 72px;
     position: absolute;
-    right: 35.6%;
-    top: 34.6%;
+    right: 684px;
+    top: 277px;
 }
 
 #fv .right_orange_square {
-    width: 9.4%;
+    width: 182px;
     position: absolute;
-    right: 27.2%;
-    top: 42.7%;
+    right: 522px;
+    top: 366px;
 }
 
 #fv .right_black_triangle2 {
-    width: 3.9%;
+    width: 77px;
     position: absolute;
-    right: 17.7%;
-    top: 8.4%;
+    right: 341px;
+    top: 82px;
 }
 
 #fv .left_orange_square {
-    width: 9%;
+    width: 173px;
     position: absolute;
-    left: 31.8%;
-    top: 82%;
+    left: 612px;
+    top: 647px;
     z-index: -80;
 }
 
 #fv .right_gray_circle {
-    width: 2%;
+    width: 45px;
     position: absolute;
-    right: 23.2%;
-    top: 26.6%;
+    right: 445px;
+    top: 219px;
 }
 
 #fv .center_orange_circle {
-    width: 30%;
+    width: 586px;
     position: absolute;
-    right: 34.2%;
-    top: 1.8%;
+    right: 660px;
+    top: 30px;
     z-index: -100;
 }
 
 #fv .center_gradient_square {
-    width: 30%;
+    width: 579px;
     position: absolute;
-    left: 24.8%;
-    top: 93%;
+    left: 503px;
+    top: 728px;
 }
 
 #fv .right_gradient_square {
-    width: 26.3%;
+    width: 507px;
     position: absolute;
-    right: 29.5%;
-    top: 47.6%;
+    right: 549px;
+    top: 424px;
     z-index: -60;
 }
 
-#fv .black_square {
+/* #fv .black_square {
     width: 10%;
     position: absolute;
     left: 5%;
@@ -151,43 +152,43 @@ h3 {
     position: absolute;
     left: 10%;
     top: 10%;
-}
+} */
 
 #fv .left_cross_line {
-    width: 5.7%;
+    width: 111px;
     position: absolute;
-    left: 16.9%;
-    top: 68%;
+    left: 325px;
+    top: 557px;
 }
 
 #fv .center_leaf {
-    width: 33%;
+    width: 634px;
     position: absolute;
-    right: 19.3%;
-    top: 58%;
+    right: 351px;
+    top: 468px;
 }
 
 #fv .left_leaf {
-    width: 31.9%;
+    width: 613px;
     position: absolute;
-    left: 21.9%;
-    top: 14.9%;
+    left: 437px;
+    top: 207px;
     z-index: -70;
 }
 
 #fv .left_dot {
-    width: 4%;
+    width: 37px;
     position: absolute;
-    left: 41%;
-    top: 17%;
+    left: 673px;
+    top: 182px;
     z-index: -65;
 }
 
 #fv .right_dot {
-    width: 13%;
+    width: 172px;
     position: absolute;
-    right: 31%;
-    top: 47%;
+    right: 626px;
+    top: 562px;
     z-index: -60;
 }
 
@@ -196,8 +197,8 @@ h1 {
     font-family: Bradley Hand Bold;
     font-weight: bold;
     position: absolute;
-    left: 19.2%;
-    top: 59.5%;
+    left: 333px;
+    top: 491px;
 }
 
 .scrollbar p {
@@ -230,7 +231,9 @@ h1 {
 
 #header .pc_nav li {
     display: block;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 #header .sns_wrap {
@@ -254,13 +257,15 @@ h1 {
 
 /* content */
 .content {
-    padding-left: 23%;
+    padding: 0 10px 0 460px;
     max-width: calc(1920px - 460px);
     min-width: 100%;
     box-sizing: border-box;
 }
 
 .top {
+    margin-left: auto;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -282,7 +287,6 @@ h1 {
     text-align: left;
     font-size: 20px;
     line-height: 2;
-    letter-spacing: 0.14em;
 }
 
 .top .sub_text span {
@@ -292,12 +296,18 @@ h1 {
 /* about */
 #about {
     display: flex;
+    justify-content: space-between;
+    gap: 30px;
     margin-bottom: 252px;
 }
 
 #about .job_titel {
     font-size: 14px;
     padding-bottom: 18px;
+}
+
+#about .about_text {
+    width: 50%;
 }
 
 #about .my_name {
@@ -308,13 +318,11 @@ h1 {
 #about .my_explanation {
     font-size: 18px;
     line-height: 2.2;
-    letter-spacing: 0.14em;
     padding-bottom: 54px;
 }
 
 #about .my {
     width: 50%;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -329,11 +337,42 @@ h1 {
     position: relative;
 }
 
+/* #about .profile_btn {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    margin: 5.7px 0;
+    border-radius: 9999px;
+    background-color: #000000;
+} */
+
+#about .profile_btn button::before,
+#about .profile_btn button::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    width: 10px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: #000000;
+    transform-origin: calc(100% - 1px) 50%;
+}
+
+#about .profile_btn button::before {
+    transform: rotate(45deg);
+}
+
+#about .profile_btn button::after {
+    transform: rotate(-45deg);
+}
+
 #about .profile_btn button {
     font-size: 32px;
     color: #000000;
     width: 400px;
-    height: 80px;
+    /* height: 80px; */
     background: none;
     border: 2px solid #000000;
     cursor: pointer;
@@ -341,10 +380,10 @@ h1 {
 }
 
 #about .profile_btn .about_btn_dot {
-    width: 25%;
+    width: 93px;
     position: absolute;
-    top: 27%;
-    left: -12%;
+    top: 15px;
+    left: -48px;
 }
 
 /* works */
@@ -359,10 +398,10 @@ h1 {
 }
 
 #works .works_my_pic {
-    width: 45px;
+    width: 46px;
     position: absolute;
-    top: -1.7%;
-    left: 2%;
+    top: -24px;
+    left: 28px;
     z-index: 1;
 }
 
@@ -375,7 +414,19 @@ h1 {
     padding-bottom: 198px;
 }
 
-#works .work5 img {
+#works .work5_mockup_group {
+    padding-left: 7%;
+}
+
+#works .work5_mov {
+    padding-left: 43%;
+}
+
+#works .work5_sheet {
+    padding-left: 21%;
+}
+
+#works .work_img {
     padding-bottom: 36px;
 }
 
@@ -384,8 +435,12 @@ h1 {
     padding-bottom: 198px;
 }
 
-#works .cafe_website img {
+/* #works .cafe_website img {
     padding-bottom: 36px;
+} */
+
+#works .cafe_mockup_group {
+    padding-left: 9%;
 }
 
 #works .portfoliosite {
@@ -393,8 +448,20 @@ h1 {
     padding-bottom: 162px;
 }
 
-#works .portfoliosite img {
+/* #works .portfoliosite img {
     padding-bottom: 36px;
+} */
+
+#works .portfolio_group {
+    padding-left: 7%;
+}
+
+#works .portfolio_sp_mov {
+    padding-left: 96%;
+}
+
+#works .portfolio_mov {
+    padding-left: 43%;
 }
 
 #works .works_btn {
@@ -403,7 +470,7 @@ h1 {
 }
 
 #works .works_btn button {
-    font-size: 32px;
+    font-size: 24px;
     color: #ffffff;
     width: 400px;
     height: 80px;
@@ -425,8 +492,8 @@ h1 {
 #skill .skill_my_icon {
     width: 60px;
     position: absolute;
-    top: 2%;
-    left: 32%;
+    top: 52px;
+    left: 462px;
 }
 
 #skill .skill_container {
@@ -436,17 +503,16 @@ h1 {
 #skill .skill_container p {
     font-size: 18px;
     line-height: 2.22;
-    letter-spacing: 0.14em;
     margin-bottom: 108px;
 }
 
 #skill .skill_container .mouse_icon {
-    width: 15%;
+    width: 204px;
     padding-bottom: 90px;
 }
 
 #skill .skill_container .pc_icon {
-    width: 15%;
+    width: 227px;
     padding-bottom: 90px;
 }
 
@@ -460,6 +526,11 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 54px;
+}
+
+#skill .skill_box.coding ul {
+    max-width: 860px;
+    margin: 0 auto;
 }
 
 #skill .skill_box ul li {
@@ -479,12 +550,12 @@ h1 {
 #contact p {
     font-size: 18px;
     line-height: 2.22;
-    letter-spacing: 0.14em;
     margin-bottom: 90px;
 }
 
 #contact .contact_btn button {
-    font-size: 32px;
+    font-size: 24px;
+    font-weight: bold;
     color: #000000;
     width: 600px;
     height: 80px;
@@ -492,26 +563,27 @@ h1 {
     border: 2px solid #000000;
     padding: 10px 20px;
     margin-bottom: 36px;
-}
-
-#contact .contact_btn {
     position: relative;
 }
 
 #contact .contact_btn ::after {
     content: "";
     position: absolute;
-    top: 29%;
-    left: 76%;
-    width: 0;
-    height: 0;
-    margin-top: -5px;
+    top: 28px;
+    right: 32px;
     border: 10px solid transparent;
     border-left: 10px solid #000000;
 }
 
-#contact .line_btn button {
-    font-size: 32px;
+#contact .contact_border {
+    width: 616px;
+    border: 1px solid #000000;
+    margin: 0 auto 90px;
+}
+
+.line_btn button {
+    font-size: 24px;
+    font-weight: bold;
     color: #000000;
     width: 400px;
     height: 80px;
@@ -519,20 +591,14 @@ h1 {
     border: 2px solid #000000;
     padding: 10px 20px;
     margin-bottom: 126px;
-}
-
-#contact .line_btn {
     position: relative;
 }
 
-#contact .line_btn ::after {
+.line_btn ::after {
     content: "";
     position: absolute;
-    top: 18%;
-    left: 66%;
-    width: 0;
-    height: 0;
-    margin-top: -5px;
+    top: 28px;
+    right: 32px;
     border: 10px solid transparent;
     border-left: 10px solid #000000;
 }
@@ -548,6 +614,7 @@ h1 {
 
 
 /* about.html */
+
 .about_page {
     text-align: center;
 }
@@ -557,21 +624,112 @@ h1 {
     margin-bottom: 90px;
 }
 
-h4 {
-    font-size: 24px;
+
+#profile {
+    margin: 0 auto;
+    max-width: 1460px;
+    margin-bottom: 204px;
 }
 
-#my_life section {
+.about_body h3 {
+    font-size: 24px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    border-left: 16px solid #f15a24;
+    border-bottom: 2px solid #f15a24;
+    padding: 0 0 10px 36px;
+    margin-bottom: 90px;
+}
+
+#profile table {
+    width: 100%;
+}
+
+#profile table th,
+#profile table td {
+    font-size: 16px;
+    padding-bottom: 36px;
+}
+
+#profile table th {
+    width: 50%;
+}
+
+#my_life {
+    margin-bottom: 204px;
+}
+
+#my_life .history {
     display: flex;
     gap: 72px;
+    align-items: center;
+    margin-left: 320px;
+    position: relative;
+    margin-bottom: 72px;
 }
 
-h5 {
+#my_life .history h5 {
+    background: #666666;
+    color: #ffffff;
+    width: 120px;
+    height: 40px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
     font-size: 16px;
+    position: relative;
+}
+
+#my_life .about_gray_line {
+    position: relative;
+}
+
+#my_life .about_gray_line::before {
+    content: "";
+    position: absolute;
+    left: 393px;
+    top: 24px;
+    width: 1px;
+    height: 100%;
+    background: #666666;
+    z-index: -1;
+}
+
+#my_life p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.about_body h4 {
+    font-size: 40px;
+}
+
+
+#policy {
+    margin-bottom: 204px;
+}
+
+#policy .policy_details {
+    width: 100%;
+    text-align: center;
 }
 
 #policy .policy_ring {
-    width: 20.7%;
+    width: 397px;
+    text-align: center;
+}
+
+#policy .policy_p {
+    font-size: 18px;
+    line-height: 2.22;
+}
+
+#policy .policy_details .sincere {
+    padding-bottom: 36px;
+}
+
+.about_body #skill .skill_heading {
+    justify-content: left;
 }
 
 #works .comment {
@@ -597,6 +755,41 @@ h5 {
 
 
 /* works.html */
+
+.works_body #works h2 {
+    text-align: center;
+    position: relative;
+}
+
+.works_body #works .works_my_pic {
+    left: 628px;
+}
+
+.works_body .click {
+    font-size: 32px;
+}
+
+.works_body #works .mockup_img {
+    width: 721px;
+    padding-bottom: 0;
+}
+
+.works_body #works .work5,
+.works_body #works .cafe_website,
+.works_body #works .portfoliosite {
+    gap: 144px;
+}
+
+.works_body #works .work_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.works_body #works .portfoliosite {
+    margin-bottom: 489px;
+}
+
 .works_explain_btn {
     position: relative;
 
@@ -621,69 +814,213 @@ h5 {
     border: 1px solid #000000;
 }
 
-
-
-
-/* お疲れ様です！
-2日前にイラレのデータが全てバグってしまい、
-森田先生にも確認いただきましたが、現状、復旧できていない状況で、
-文字サイズやオブジェクトのサイズ・余白感が全て分からなくなってしまっています。
-元には戻らないっぽいので１から作り直さないといけないと思っています。泣。。。
-
-幸いにも、バグが起きる前にトップページだけですが、
-文字サイズ・大体の余白などコードにできていた為、
-下層ページもそこに合わせて作ろうと思います。
-
-ただ、ファーストビューのオブジェクトやボタン・画像のサイズや位置が
-正確な数値が分からず、一旦、感覚で入れています。
-
-
-トップページ、要素の入れ込みは完了し、下記上手くいっていない箇所教えていただきたいです。
-↓
-①全体
-h2.h3や他一部、別のフォントを使用しており、
-元々、使っていたフォントがAdobeフォントでは無かった為、Adobeフォントの中から似たフォントを探しました。
-調べて、HTMLとreset.cssで必要な記述をしたつもりなのですが、反映されていない様です。
-次回、面談の日に教えていただきたいです。
-
-②ファーストビュー
-オブジェクトのwidthと位置を％（パーセント）で指定していますが、
-画面幅が変わると全て位置が崩れてしまっています。
-どこが原因で崩れてしまっているのでしょうか？
-
-③コンセプト
-要素は右寄せ・文字は左揃えにしたいのですが、
-どうしても、左に配置できません。
-親要素の
-.top {display: flex;
-      flex-direction: column;
-      ext-align: right;
+.banner {
+    display: flex;
+    justify-content: space-between;
 }
-pタグにdisplay: inline-block;
-      text-align: left;　を試してみています。
 
-④サービス＆スキル
-使用ツールなどの枠は、デザインとコーディング共通で指定しており、
-４つ目以降折り返す様に記述したんですが、
-どの画面幅で見ても上４つ・下３つの表示にしたいです。
-どのような考え方で作れますか？
+/* contact.html */
+.contact_body h2 {
+    font-size: 32px;
+}
 
+.contact_body h3 {
+    font-size: 40px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
 
-他、全体的にみていただきたいのと、下層ページも少し進めています。
-そちらも確認をお願いしたいです。
+/* #contact {
+    position: relative;
+}
 
-添削よろしくお願いいたします。
+.contact_body h3 ::before,
+.contact_body h3 ::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 614px;
+    border: 1px solid #f15a24;
+} */
 
- */
+.gray_line {
+    position: relative;
+}
 
-/* 追加で教えていただきたい点
- ・h1~h6 見出しタグの概念・使い方
- ・css class名の書き方（詳しく書かない方がいい場合もあるのか）
- ・about。htmlのページ指定しているタグは適切か
- ・TOPページの配置で下層ページで写真だけ変えたい場合
-                 マージンだけ少し変わる場合、
-　　　　　　　　　　テキストの位置が左側から中央になる場合、
- ・TOPページファーストビューではheaderを表示しない←どう検索したら出てくるか
- ・
- を再度確認させていただきたいです
-  */
+.gray_line::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #666666;
+}
+
+.number {
+    position: relative;
+    padding-left: 190px;
+    counter-increment: step;
+}
+
+.number::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #666666;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    z-index: 1;
+    font-size: 40px;
+}
+
+.hearing_list {
+    margin-bottom: 90px;
+}
+
+.number.hearing p {
+    margin-bottom: 18px;
+}
+
+.hearing_list ul {
+    display: flex;
+    font-size: 18px;
+    gap: 40px;
+}
+
+.contact_body h4 {
+    font-size: 32px;
+}
+
+.contact_body .flow_design .number {
+    text-align: left;
+}
+
+.contact_body .sent_btn button {
+    font-size: 32px;
+}
+
+form {
+    max-width: 613px;
+    margin: 0 auto;
+    /* background: #f9f9f9; */
+    border-radius: 8px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    margin: 36px 0 18px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+form textarea#message {
+    margin-bottom: 70px;
+}
+
+form button {
+    font-size: 24px;
+    width: 400px;
+    padding: 18px 24px;
+    background: #666666;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 90px;
+}
+
+button:hover {
+    background: #f15a24;
+}
+
+/* work5.html */
+.work5_body .content {
+    padding-right: 10px;
+}
+
+.work5_body .content .work5_page img {
+    margin: 108px 0 18px 0;
+}
+
+.work5_body .work5_page p {
+    text-align: right;
+    padding-bottom: 72px;
+}
+
+.work5_body h2 {
+    font-size: 40px;
+    font-weight: 100;
+    padding-bottom: 18px;
+    color: #000000;
+    text-align: left;
+    margin: 0;
+}
+
+.work5_body #work5_box p {
+    padding-bottom: 36px;
+}
+
+.work5_body h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 18px;
+    margin: 0;
+}
+
+#work5_box .work5_explain {
+    margin-bottom: 72px;
+}
+
+.work5_explain_box {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.work5_mock {
+    width: 100%;
+    margin: 234px 0;
+}
+
+#work5_box h4 {
+    font-size: 18px;
+}
+
+#work5_box .work5_text p {
+    font-size: 18px;
+    padding-bottom: 72px;
+}
+
+.work_slider_box p {
+    font-size: 24px;
+    padding-left: 324px;
+}
+
+.cafe_mock {
+    width: 56%;
+    margin-bottom: 378px;
+}
+
+.portfolio_mock {
+    width: 35%;
+}
+
+/* .work_slider_img {
+    display: flex;
+    justify-content: space-between;
+} */

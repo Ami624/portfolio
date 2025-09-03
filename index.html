@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <style>
-        @import url("https://use.typekit.net/kuw7orj.css");
-    </style>
     <link rel="stylesheet" href="https://use.typekit.net/kuw7orj.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
 </head>
 
 <body>
@@ -31,8 +30,8 @@
         <img src="./images/SVG/アセット 59.svg" alt="中央丸" class="center_orange_circle">
         <img src="./images/SVG/アセット 60.svg" alt="中央四角グラデーション" class="center_gradient_square">
         <img src="./images/SVG/アセット 61.svg" alt="四角グラデーション" class="right_gradient_square">
-        <img src="./images/SVG/アセット 62.svg" alt="四角黒斜め" class="black_square">
-        <img src="./images/SVG/アセット 63.svg" alt="線" class="line">
+        <!-- <img src="./images/SVG/アセット 62.svg" alt="四角黒斜め" class="black_square">
+        <img src="./images/SVG/アセット 63.svg" alt="線" class="line"> -->
         <img src="./images/SVG/アセット 66.svg" alt="線クロス" class="left_cross_line">
         <img src="./images/2x/leaf_illustration@2x.png" alt="葉" class="center_leaf">
         <img src="./images/2x/a_leaf_illustration2x.png" alt="ヤシの葉" class="left_leaf">
@@ -120,28 +119,28 @@
             <h2><span>W</span>orks</h2>
 
             <div class="work5">
-                <div>
+                <div class="work5_mockup_group">
                     <a href="">
-                        <img src="./images/1x/work5_website-80.jpg" alt="work5モック画像">
+                        <img src="./images/1x/work5_website-80.jpg" alt="work5モック画像" class="work_img work5_mockup">
                     </a>
                     <p>LIFE hair design 様</p>
                     <p>Webサイト</p>
                     <p>担当範囲：デザイン</p>
                 </div>
                 <a href="">
-                    <img src="" alt="work5sp動画">
+                    <img src="https://placehold.jp/180x267.png" alt="work5sp動画" class="work5_mov">
                 </a>
                 <a href="">
-                    <img src="./images/1x/work5_sheet-80.jpg" alt="work5モックシート">
+                    <img src="./images/1x/work5_sheet-80.jpg" alt="work5モックシート" class="work5_sheet">
                 </a>
             </div>
             <div class="cafe_website">
                 <a href="">
-                    <img src="" alt="カフェWebサイト動画">
+                    <img src="https://placehold.jp/718x484.png" alt="カフェWebサイト動画">
                 </a>
-                <div>
+                <div class="cafe_mockup_group">
                     <a href="">
-                        <img src="./images/1x/cafe_website-80.jpg" alt="カフェWebサイトモック画像">
+                        <img src="./images/1x/cafe_website-80.jpg" alt="カフェWebサイトモック画像" class="work_img cafe_mockup">
                     </a>
                     <p>DESIGN CAFE 様</p>
                     <p>Webサイト</p>
@@ -149,19 +148,20 @@
                 </div>
             </div>
             <div class="portfoliosite">
-                <div>
+                <div class="portfolio_group">
                     <a href="">
-                        <img src="./images/1x/portfoliosite-80.jpg" alt="ポートフォリオサイトモック画像">
+                        <img src="./images/1x/portfoliosite-80.jpg" alt="ポートフォリオサイトモック画像"
+                            class="work_img portfolio_mockup">
                     </a>
                     <p>ポートフォリオサイト</p>
                     <p>Webサイト</p>
                     <p>担当範囲：デザイン・コーディング</p>
                 </div>
                 <a href="">
-                    <img src="" alt="ポートフォリオサイトsp動画">
+                    <img src="https://placehold.jp/186x262.png" alt="ポートフォリオサイトsp動画" class="portfolio_sp_mov">
                 </a>
                 <a href="">
-                    <img src="" alt="ポートフォリオサイト動画">
+                    <img src="https://placehold.jp/509x359.png" alt="ポートフォリオサイト動画" class="portfolio_mov">
                 </a>
             </div>
             <div class="works_btn">
@@ -204,7 +204,7 @@
                     運用しやすいコードを丁寧に作ります。<br>
                     デザインからコーディングまでトータルコーディネートいたします。
                 </p>
-                <div class="skill_box">
+                <div class="skill_box coding">
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -227,12 +227,11 @@
                 １２時間以内にお返事させていただきます。
             </p>
             <div class="contact_btn">
-                <button type="button" onclick="location.href='URL'">お問い合わせはこちらから</button>
+                <button type="button" onclick="location.href='./contact.html'">お問い合わせはこちらから</button>
             </div>
             <p class="contact_note">納品までの流れもご確認ください</p>
             <!-- <>は擬似要素で入れる -->
-            <div></div>
-            <!-- 線 -->
+            <div class="contact_border"></div>
             <p>公式LINEからのお問い合わせも受け付けております。<br>
                 そちらもご利用ください。
             </p>
@@ -245,6 +244,20 @@
     <footer id="footer">
         <div></div>
     </footer>
+
+    <script>
+        (function () {
+            const fh = document.getElementById('header_wrap');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 750) {
+                    fh.classList.add('is-show');
+                } else {
+                    fh.classList.remove('is-show');
+                }
+            });
+        }());
+
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,45 @@
+/* 
+教えていただきたいこと
+【全体】
+・背景のサイズ調整
+。ボタンの矢印調整
+
+【トップページ】
+・FV配置ズレる
+・worksの配置
+・skillの見出しにある写真ズレる
+　お問い合わせとLINEへのボタンの▶︎が画面幅が変わってもくっついているには？
+・ヘッダー、FV以下で表示
+
+【about.html】
+・これまでの歩み
+　pタグが左揃えにならない理由
+　と、年表の幅調整
+・大切にしていること
+テキストの配置
+・できることの見出しが他と違う
+
+【works.html】
+・ALLなどの選択ボタン
+・画像に白背景がついてしまっている
+
+【contact.html】
+・h3の擬似要素二重線の作り方
+・フォーム貼り付け方
+・02ヒアリングの箇所pタグの下の余白調整の為、クラス名を２つ付け
+　css記述してるが反映されない
+・番号が中央にいかない
+
+【work5.html】
+・スライダー部分の配置
+ */
+
+
+
+
+
+
+
 @charset "utf-8";
 
 /* cssリセット */
@@ -20,20 +62,29 @@ li {
     color: #000;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     font-feature-settings: "palt";
+    letter-spacing: 0.14em;
 }
 
-h2 h3 {
-    font-family: "warbler-text", sans-serif;
+h2,
+h3 {
+    font-family: warbler-banner, sans-serif;
     font-weight: 700;
     font-style: normal;
 
 }
 
-h3 a {
+a {
     /*下線を消す*/
     text-decoration: none;
     /*色を消す*/
     color: inherit;
+}
+
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: step;
 }
 
 ul {

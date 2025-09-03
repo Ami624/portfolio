@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <style>
-        @import url("https://use.typekit.net/kuw7orj.css");
-    </style>
     <link rel="stylesheet" href="https://use.typekit.net/kuw7orj.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="contact_body">
     <header id="header">
         <div class="header_wrap">
             <nav class="pc_nav">
@@ -57,37 +54,98 @@
                             <h4>お問い合わせ</h4>
                             <p>
                                 まずは、ご質問やご相談などお気軽にお問い合わせください。<br>
-                                お話を聞く中で、一緒に問題解決のお手伝いができるよう丁寧にヒアリングさせていただきます。
+                                お話を聞く中で、一緒に問題解決のお手伝いができるよう丁寧にヒアリングさせていただきます。<br>
                                 １２時間以内にお返事させていただきます。
+                            </p>
+                        </li>
+                        <li class="number hearing">
+                            <h4>ヒアリング</h4>
+                            <p>
+                                安心してご依頼いただく為、正式なご依頼の前に一度お打ち合わせのお時間をいただいております。<br>
+                                サービス内容・今後の流れについてご説明させていただきます。<br>
+                                お打ち合わせでご納得いただけた場合のみお見積もりをさせていただきます。
+                            </p>
+                            <div class="hearing_list">
+                                <ul>
+                                    <li>Zoom</li>
+                                    <li>Google meet</li>
+                                    <li>Microsoft Team</li>
+                                    <li>メール・LINEでのやり取りも可</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="number">
+                            <h4>お見積もり</h4>
+                            <p>
+                                正式なお見積もりをメールにてお送りさせていただきます。<br>
+                                ご確認いただき、ご納得いただけましたら正式に契約を結び、制作に取り組ませていただきます。
+                            </p>
+                        </li>
+                        <li class="number">
+                            <h4>制作</h4>
+                            <p>
+                                初稿のご提案までに~○週間程のお時間をいただいております。<br>
+                                制作期間にも何かご希望やご不明点等あればお気軽にご連絡ください。<br>
+                                できる限りご要望に沿って、素敵なデザインを作成いたします。
+                            </p>
+                        </li>
+                        <li class="number">
+                            <h4>確認・修正</h4>
+                            <p>
+                                修正は3回まで無料でお受けし、理想のデザインを一緒に整えさせていただきます。<br>
+                                ※大幅に異なるデザイン変更については別途ご料金を頂戴いたします。予めご了承くださいませ。
+                            </p>
+                        </li>
+                        <li class="number">
+                            <h4>ご入金</h4>
+                            <p>
+                                デザイン完成後、銀行振込にてお支払いをお願いいたします。
                             </p>
                         </li>
                     </ol>
                 </div>
             </div>
 
+            <div class="contact_form">
+                <h3>お問い合わせ</h3>
+                <!-- ーは擬似要素で入れる -->
+                <p>ご質問・ご相談からでもお気軽にご連絡ください。<br>
+                    必須項目をご入力の上、下記フォームよりお問い合わせください。<br>
+                    １２時間以内にお返事させていただきます。
+                </p>
+                <form action="/send" method="post">
+                    <label for="companyname">会社名 / Company Name</label>
+                    <input type="text" id="companyname" name="companyname">
 
-            <p>ご質問・ご相談からでもお気軽にご連絡ください。<br>
-                必須項目をご入力の上、下記フォームよりお問い合わせください。<br>
-                １２時間以内にお返事させていただきます。
-            </p>
-            <div class="contact_btn">
-                <button type="button" onclick="location.href='URL'">お問い合わせはこちらから</button>
-            </div>
-            <p class="contact_note">納品までの流れもご確認ください</p>
-            <!-- <>は擬似要素で入れる -->
-            <div></div>
-            <!-- 線 -->
-            <p>公式LINEからのお問い合わせも受け付けております。<br>
-                そちらもご利用ください。
-            </p>
-            <div class="line_btn">
-                <button type="button" onclick="location.href='URL'">公式LINE</button>
+                    <label for="name">お名前 / Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">メールアドレス / Mail Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">お問い合わせ内容 / Massage</label>
+                    <textarea name="message" id="message" rows="5" required></textarea>
+
+                    <button type="submit">送信する</button>
+                </form>
+
+                <div>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+
+                <div class="contact_border"></div>
+                <p>公式LINEからのお問い合わせも受け付けております。<br>
+                    そちらもご利用ください。
+                </p>
+                <div class="line_btn">
+                    <button type="button" onclick="location.href='URL'">公式LINE</button>
+                </div>
             </div>
         </section>
 
 
         <div class="contact_btn_orange">
-            <button type="button" onclick="location.href='URL'">Contact</button>
+            <button type="button" onclick="location.href='./contact.html'">Contact</button>
         </div>
     </main>
 
