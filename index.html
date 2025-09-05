@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -120,18 +121,18 @@
 
             <div class="work5">
                 <div class="work5_mockup_group">
-                    <a href="">
-                        <img src="./images/1x/work5_website-80.jpg" alt="work5モック画像" class="work_img work5_mockup">
+                    <a href="" class="work5_mockup">
+                        <img src="./images/1x/work5_website-80.jpg" alt="work5モック画像" class="work_img">
                     </a>
                     <p>LIFE hair design 様</p>
                     <p>Webサイト</p>
                     <p>担当範囲：デザイン</p>
                 </div>
-                <a href="">
-                    <img src="https://placehold.jp/180x267.png" alt="work5sp動画" class="work5_mov">
+                <a href="" class="work5_mov">
+                    <img src="https://placehold.jp/180x267.png" alt="work5sp動画">
                 </a>
-                <a href="">
-                    <img src="./images/1x/work5_sheet-80.jpg" alt="work5モックシート" class="work5_sheet">
+                <a href="" class="work5_sheet">
+                    <img src="./images/1x/work5_sheet-80.jpg" alt="work5モックシート">
                 </a>
             </div>
             <div class="cafe_website">
@@ -139,8 +140,8 @@
                     <img src="https://placehold.jp/718x484.png" alt="カフェWebサイト動画">
                 </a>
                 <div class="cafe_mockup_group">
-                    <a href="">
-                        <img src="./images/1x/cafe_website-80.jpg" alt="カフェWebサイトモック画像" class="work_img cafe_mockup">
+                    <a href="" class="cafe_mockup">
+                        <img src="./images/1x/cafe_website-80.jpg" alt="カフェWebサイトモック画像" class="work_img">
                     </a>
                     <p>DESIGN CAFE 様</p>
                     <p>Webサイト</p>
@@ -149,19 +150,18 @@
             </div>
             <div class="portfoliosite">
                 <div class="portfolio_group">
-                    <a href="">
-                        <img src="./images/1x/portfoliosite-80.jpg" alt="ポートフォリオサイトモック画像"
-                            class="work_img portfolio_mockup">
+                    <a href="" class="portfolio_mockup">
+                        <img src="./images/1x/portfoliosite-80.jpg" alt="ポートフォリオサイトモック画像" class="work_img">
                     </a>
                     <p>ポートフォリオサイト</p>
                     <p>Webサイト</p>
                     <p>担当範囲：デザイン・コーディング</p>
                 </div>
-                <a href="">
-                    <img src="https://placehold.jp/186x262.png" alt="ポートフォリオサイトsp動画" class="portfolio_sp_mov">
+                <a href="" class="portfolio_sp_mov">
+                    <img src="https://placehold.jp/186x262.png" alt="ポートフォリオサイトsp動画">
                 </a>
-                <a href="">
-                    <img src="https://placehold.jp/509x359.png" alt="ポートフォリオサイト動画" class="portfolio_mov">
+                <a href="" class="portfolio_mov">
+                    <img src="https://placehold.jp/509x359.png" alt="ポートフォリオサイト動画">
                 </a>
             </div>
             <div class="works_btn">
@@ -247,9 +247,9 @@
 
     <script>
         (function () {
-            const fh = document.getElementById('header_wrap');
+            const fh = document.querySelector('.header_wrap');
             window.addEventListener('scroll', () => {
-                if (window.pageYOffset > 750) {
+                if (window.pageYOffset > 800) {
                     fh.classList.add('is-show');
                 } else {
                     fh.classList.remove('is-show');

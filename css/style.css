@@ -2,6 +2,7 @@
 
 body {
     background-image: url(../images/seamless_bg.jpg);
+    background-size: contain;
 }
 
 h2 {
@@ -34,9 +35,10 @@ h3,
 #fv .fv_main_img {
     width: 497px;
     position: absolute;
-    right: 732px;
+    left: 50%;
     top: 103px;
     z-index: -50;
+    transform: translateX(-50%);
 }
 
 #fv .right_gray_triangle {
@@ -120,7 +122,8 @@ h3,
 #fv .center_orange_circle {
     width: 586px;
     position: absolute;
-    right: 660px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 30px;
     z-index: -100;
 }
@@ -227,6 +230,12 @@ h1 {
     height: 100vh;
     box-sizing: border-box;
     /* margin-left: 106px; */
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#header .header_wrap.is-show {
+    opacity: 1;
 }
 
 #header .pc_nav li {
@@ -257,8 +266,8 @@ h1 {
 
 /* content */
 .content {
-    padding: 0 10px 0 460px;
-    max-width: calc(1920px - 460px);
+    padding: 0 10px 0 24%;
+    max-width: calc(1920px - 24%);
     min-width: 100%;
     box-sizing: border-box;
 }
@@ -317,7 +326,6 @@ h1 {
 
 #about .my_explanation {
     font-size: 18px;
-    line-height: 2.2;
     padding-bottom: 54px;
 }
 
@@ -400,7 +408,7 @@ h1 {
 #works .works_my_pic {
     width: 46px;
     position: absolute;
-    top: -24px;
+    top: 44px;
     left: 28px;
     z-index: 1;
 }
@@ -419,11 +427,11 @@ h1 {
 }
 
 #works .work5_mov {
-    padding-left: 43%;
+    padding-left: 5%;
 }
 
 #works .work5_sheet {
-    padding-left: 21%;
+    padding-left: 8%;
 }
 
 #works .work_img {
@@ -457,16 +465,16 @@ h1 {
 }
 
 #works .portfolio_sp_mov {
-    padding-left: 96%;
+    padding-left: 4%;
 }
 
 #works .portfolio_mov {
-    padding-left: 43%;
+    padding-left: 5%;
 }
 
 #works .works_btn {
     text-align: end;
-    padding-right: 20%;
+    padding-right: 5%;
 }
 
 #works .works_btn button {
@@ -481,28 +489,23 @@ h1 {
 /* skill */
 #skill {
     margin-bottom: 252px;
-    position: relative;
+    text-align: center;
 }
 
 #skill .skill_heading {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    display: inline-block;
 }
 
 #skill .skill_my_icon {
     width: 60px;
     position: absolute;
-    top: 52px;
-    left: 462px;
-}
-
-#skill .skill_container {
-    text-align: center;
+    top: 120px;
+    left: -54px;
 }
 
 #skill .skill_container p {
     font-size: 18px;
-    line-height: 2.22;
     margin-bottom: 108px;
 }
 
@@ -528,6 +531,10 @@ h1 {
     row-gap: 54px;
 }
 
+#skill .skill_box ul li:last-child {
+    border-right: none;
+}
+
 #skill .skill_box.coding ul {
     max-width: 860px;
     margin: 0 auto;
@@ -535,11 +542,7 @@ h1 {
 
 #skill .skill_box ul li {
     border-right: 1px solid #000;
-    padding: 0 70px;
-}
-
-#skill .skill_box ul li :last-child {
-    border-right: none;
+    padding: 0 62px;
 }
 
 /* contact */
@@ -549,7 +552,6 @@ h1 {
 
 #contact p {
     font-size: 18px;
-    line-height: 2.22;
     margin-bottom: 90px;
 }
 
@@ -662,7 +664,7 @@ h1 {
     display: flex;
     gap: 72px;
     align-items: center;
-    margin-left: 320px;
+    margin-left: 10%;
     position: relative;
     margin-bottom: 72px;
 }
@@ -672,7 +674,7 @@ h1 {
     color: #ffffff;
     width: 120px;
     height: 40px;
-    padding: 10px 15px;
+    line-height: 40px;
     border-radius: 5px;
     text-align: center;
     font-size: 16px;
@@ -686,8 +688,8 @@ h1 {
 #my_life .about_gray_line::before {
     content: "";
     position: absolute;
-    left: 393px;
-    top: 24px;
+    left: 194px;
+    top: 28px;
     width: 1px;
     height: 100%;
     background: #666666;
@@ -697,7 +699,7 @@ h1 {
 #my_life p {
     margin: 0;
     font-size: 16px;
-    line-height: 1.7;
+    width: 70%;
 }
 
 .about_body h4 {
@@ -719,9 +721,15 @@ h1 {
     text-align: center;
 }
 
+#policy .policy_text_box {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 36px;
+}
+
 #policy .policy_p {
     font-size: 18px;
-    line-height: 2.22;
 }
 
 #policy .policy_details .sincere {
@@ -729,7 +737,8 @@ h1 {
 }
 
 .about_body #skill .skill_heading {
-    justify-content: left;
+    display: block;
+    text-align: left;
 }
 
 #works .comment {
@@ -756,13 +765,16 @@ h1 {
 
 /* works.html */
 
-.works_body #works h2 {
-    text-align: center;
+.works_body #works {
     position: relative;
 }
 
+.works_body #works h2 {
+    text-align: center;
+}
+
 .works_body #works .works_my_pic {
-    left: 628px;
+    left: 43%;
 }
 
 .works_body .click {
@@ -770,14 +782,14 @@ h1 {
 }
 
 .works_body #works .mockup_img {
-    width: 721px;
+    /* width: 721px; */
     padding-bottom: 0;
 }
 
 .works_body #works .work5,
 .works_body #works .cafe_website,
 .works_body #works .portfoliosite {
-    gap: 144px;
+    gap: 60px;
 }
 
 .works_body #works .work_box {
@@ -817,6 +829,8 @@ h1 {
 .banner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 /* contact.html */
@@ -873,7 +887,7 @@ h1 {
     background: #666666;
     color: #ffffff;
     text-align: center;
-    line-height: 50px;
+    line-height: 100px;
     font-weight: bold;
     z-index: 1;
     font-size: 40px;
@@ -971,6 +985,11 @@ button:hover {
     margin: 0;
 }
 
+.work5_body .line {
+    border: 1px solid #000000;
+    margin-bottom: 90px;
+}
+
 .work5_body #work5_box p {
     padding-bottom: 36px;
 }
@@ -1004,11 +1023,39 @@ button:hover {
 #work5_box .work5_text p {
     font-size: 18px;
     padding-bottom: 72px;
+    width: 70%;
 }
 
-.work_slider_box p {
+#work5_box .work5_text li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work_slider_box .works_other {
     font-size: 24px;
     padding-left: 324px;
+    position: relative;
+}
+
+.work_slider_box .works_other::before,
+.work_slider_box .works_other::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 24px;
+    border-radius: 9999px;
+    background-color: #000000;
+    transform-origin: 50% calc(100% - 1px);
+}
+
+.work_slider_box .works_other::before {
+    transform: rotate(45deg);
+}
+
+.work_slider_box .works_other::after {
+    transform: rotate(-45deg);
 }
 
 .cafe_mock {
@@ -1020,7 +1067,19 @@ button:hover {
     width: 35%;
 }
 
-/* .work_slider_img {
+.work_slider {
     display: flex;
     justify-content: space-between;
-} */
+    margin-bottom: 378px;
+}
+
+.slider_img {
+    width: 80%;
+    padding-bottom: 36px;
+}
+
+#work5_box .work_slider_box .work_slider p {
+    font-size: 16px;
+    padding-left: 0;
+    padding-bottom: 0;
+}
