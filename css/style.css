@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: "BradleyHandBold";
+    src: url("../bradley-hand-itc-tt-bold.ttf") format("truetype");
+}
+
 body {
     background-image: url(../images/seamless_bg.jpg);
     background-size: contain;
@@ -17,106 +22,112 @@ h2 span {
     font-size: 112px;
 }
 
-h3,
-.about_body h4 {
-    font-size: 40px;
+h3 {
+    font-size: 32px;
 }
 
 /* ファーストビュー */
 #fv {
     max-width: 1920px;
-    height: 800px;
+    height: 750px;
     display: block;
     text-align: center;
     position: relative;
     margin-bottom: 162px;
+    overflow-x: hidden;
 }
 
-#fv .fv_main_img {
-    width: 497px;
+#fv .fly-in {
     position: absolute;
     left: 50%;
     top: 103px;
     z-index: -50;
-    transform: translateX(-50%);
+}
+
+#fv .fly-in div {
+    position: relative;
+}
+
+#fv .fv_main_img {
+    width: 497px;
 }
 
 #fv .right_gray_triangle {
     width: 118px;
     position: absolute;
-    right: 4.3%;
-    top: 40.9%;
+    left: 170%;
+    top: 20%;
 }
 
 #fv .right_black_triangle {
     width: 73px;
     position: absolute;
-    right: 10.5%;
-    top: 3%;
+    left: 150%;
+    top: -10%;
 }
 
 #fv .left_black_triangle {
     width: 77px;
     position: absolute;
-    left: 569px;
-    top: 537px;
+    left: -32%;
+    top: 64%;
 }
 
 #fv .left_gray_circle {
     width: 45px;
     position: absolute;
-    left: 349px;
-    top: 384px;
+    left: -84%;
+    top: 44%;
 }
 
 #fv .center_darkgray_triangle {
     width: 42px;
     position: absolute;
-    right: 630px;
-    top: 199px;
+    left: 104%;
+    top: 10%;
 }
 
 #fv .center_black_triangle {
     width: 59px;
     position: absolute;
-    right: 645px;
-    top: 231px;
+    left: 96%;
+    top: 14%;
 }
 
 #fv .center_darkgray_triangle2 {
     width: 72px;
     position: absolute;
-    right: 684px;
-    top: 277px;
+    left: 87%;
+    top: 22%;
 }
 
 #fv .right_orange_square {
     width: 182px;
     position: absolute;
-    right: 522px;
-    top: 366px;
+    left: 92%;
+    top: 34%;
 }
 
 #fv .right_black_triangle2 {
     width: 77px;
     position: absolute;
-    right: 341px;
-    top: 82px;
+    left: 128%;
+    top: -4%;
 }
 
 #fv .left_orange_square {
     width: 173px;
     position: absolute;
-    left: 612px;
-    top: 647px;
+    left: -12%;
+    top: 77%;
     z-index: -80;
 }
 
 #fv .right_gray_circle {
     width: 45px;
     position: absolute;
-    right: 445px;
-    top: 219px;
+    left: 136%;
+    top: 14%;
 }
 
 #fv .center_orange_circle {
@@ -124,91 +135,128 @@ h3,
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 30px;
+    top: 1%;
     z-index: -100;
 }
 
 #fv .center_gradient_square {
     width: 579px;
     position: absolute;
-    left: 503px;
-    top: 728px;
+    left: -28%;
+    top: 88%;
 }
 
 #fv .right_gradient_square {
     width: 507px;
     position: absolute;
-    right: 549px;
-    top: 424px;
+    left: 38%;
+    top: 38%;
     z-index: -60;
 }
-
-/* #fv .black_square {
-    width: 10%;
-    position: absolute;
-    left: 5%;
-    top: 5%;
-}
-
-#fv .line {
-    width: 10%;
-    position: absolute;
-    left: 10%;
-    top: 10%;
-} */
 
 #fv .left_cross_line {
     width: 111px;
     position: absolute;
-    left: 325px;
-    top: 557px;
+    left: -92%;
+    top: 77%;
 }
 
 #fv .center_leaf {
     width: 634px;
     position: absolute;
-    right: 351px;
-    top: 468px;
+    left: 57%;
+    top: 60%;
 }
 
 #fv .left_leaf {
     width: 613px;
     position: absolute;
-    left: 437px;
-    top: 207px;
+    left: -44%;
+    top: 12%;
     z-index: -70;
 }
 
 #fv .left_dot {
     width: 37px;
     position: absolute;
-    left: 673px;
-    top: 182px;
+    left: -1%;
+    top: 6%;
     z-index: -65;
 }
 
 #fv .right_dot {
     width: 172px;
     position: absolute;
-    right: 626px;
-    top: 562px;
+    left: 86%;
+    top: 64%;
     z-index: -60;
 }
 
 h1 {
     font-size: 24px;
-    font-family: Bradley Hand Bold;
+    font-family: BradleyHandBold;
     font-weight: bold;
     position: absolute;
-    left: 333px;
-    top: 491px;
+    left: -72%;
+    top: 56%;
+}
+
+.fly-in div {
+    animation: switch 32s linear infinite;
+}
+
+@keyframes switch {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+        transform: scale(12)
+    }
+
+    3% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1)
+    }
+
+    10% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(.9)
+    }
+
+    13% {
+        opacity: 0;
+        filter: blur(10px);
+        transform: scale(.1)
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
 .scrollbar p {
     font-size: 14px;
     position: absolute;
-    left: 5.9%;
-    top: 68.8%;
+    left: 80px;
+    top: 72%;
+}
+
+.scrollbar ::before {
+    animation: scroll 2s infinite;
+    background-color: #000000;
+    bottom: -115px;
+    content: "";
+    position: absolute;
+    top: 220.4%;
+    left: 44.7%;
+    width: 1.5px;
+    height: 200px;
+    z-index: -2;
 }
 
 .scrollbar ::after {
@@ -219,17 +267,39 @@ h1 {
     width: 1px;
     height: 200px;
     background-color: #666666;
+    bottom: -115px;
+}
+
+/* 線のアニメーション */
+@keyframes scroll {
+    0% {
+        transform: scale(1, 0);
+        transform-origin: 0 0;
+    }
+
+    50% {
+        transform: scale(1, 1);
+        transform-origin: 0 0;
+    }
+
+    51% {
+        transform: scale(1, 1);
+        transform-origin: 0 100%;
+    }
+
+    100% {
+        transform: scale(1, 0);
+        transform-origin: 0 100%;
+    }
 }
 
 /* header */
 #header .header_wrap {
     position: fixed;
     top: 60px;
-    left: 106px;
-    /* width: 460px; */
+    left: 80px;
     height: 100vh;
     box-sizing: border-box;
-    /* margin-left: 106px; */
     opacity: 0;
     transition: 0.5s;
 }
@@ -241,8 +311,32 @@ h1 {
 #header .pc_nav li {
     display: block;
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
+}
+
+/* なビゲーションメニューのアニメーション */
+#header .pc_nav li a.line {
+    padding-bottom: 5px;
+    position: relative;
+}
+
+#header .pc_nav li a.line::before {
+    background: #ff701e;
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+#header .pc_nav li a.line:hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
 }
 
 #header .sns_wrap {
@@ -253,15 +347,14 @@ h1 {
 
 #header .sns_icon img {
     display: block;
-    width: 55px;
-    margin-bottom: 54px;
+    width: 40px;
+    margin-bottom: 36px;
 }
 
 #header .copyright {
-    font-size: 14px;
+    font-size: 10px;
     writing-mode: vertical-rl;
     text-align: center;
-    /* margin-top: 90px; */
 }
 
 /* content */
@@ -284,7 +377,7 @@ h1 {
 .top .main_text {
     display: inline-block;
     text-align: left;
-    font-size: 88px;
+    font-size: 54px;
     line-height: 1.36;
     letter-spacing: 0.18em;
     font-family: "小塚ゴシック Pr6N", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
@@ -294,7 +387,7 @@ h1 {
 .top .sub_text {
     display: inline-block;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 2;
 }
 
@@ -312,7 +405,7 @@ h1 {
 
 #about .job_titel {
     font-size: 14px;
-    padding-bottom: 18px;
+    padding-bottom: 8px;
 }
 
 #about .about_text {
@@ -325,8 +418,9 @@ h1 {
 }
 
 #about .my_explanation {
-    font-size: 18px;
-    padding-bottom: 54px;
+    font-size: 14px;
+    line-height: 2.22;
+    padding-bottom: 38px;
 }
 
 #about .my {
@@ -345,26 +439,16 @@ h1 {
     position: relative;
 }
 
-/* #about .profile_btn {
-    position: relative;
-    display: inline-block;
-    width: 24px;
-    height: 2px;
-    margin: 5.7px 0;
-    border-radius: 9999px;
-    background-color: #000000;
-} */
-
 #about .profile_btn button::before,
 #about .profile_btn button::after {
     content: "";
     position: absolute;
-    top: calc(50% - 1px);
-    right: 0;
+    top: 50%;
+    right: 10%;
     width: 10px;
     height: 2px;
     border-radius: 9999px;
-    background-color: #000000;
+    background-color: #666666;
     transform-origin: calc(100% - 1px) 50%;
 }
 
@@ -377,21 +461,20 @@ h1 {
 }
 
 #about .profile_btn button {
-    font-size: 32px;
+    font-size: 20px;
     color: #000000;
-    width: 400px;
-    /* height: 80px; */
+    width: 240px;
     background: none;
-    border: 2px solid #000000;
+    border: 2px solid #666666;
     cursor: pointer;
     padding: 10px 20px;
 }
 
 #about .profile_btn .about_btn_dot {
-    width: 93px;
+    width: 20%;
     position: absolute;
-    top: 15px;
-    left: -48px;
+    top: 18px;
+    left: -26px;
 }
 
 /* works */
@@ -408,13 +491,14 @@ h1 {
 #works .works_my_pic {
     width: 46px;
     position: absolute;
-    top: 44px;
+    top: 14px;
     left: 28px;
     z-index: 1;
 }
 
 #works p {
-    padding-bottom: 18px;
+    font-size: 14px;
+    padding-bottom: 8px;
 }
 
 #works .work5 {
@@ -427,11 +511,11 @@ h1 {
 }
 
 #works .work5_mov {
-    padding-left: 5%;
+    padding: 4% 0 0 8%;
 }
 
 #works .work5_sheet {
-    padding-left: 8%;
+    padding-left: 4%;
 }
 
 #works .work_img {
@@ -443,10 +527,6 @@ h1 {
     padding-bottom: 198px;
 }
 
-/* #works .cafe_website img {
-    padding-bottom: 36px;
-} */
-
 #works .cafe_mockup_group {
     padding-left: 9%;
 }
@@ -455,10 +535,6 @@ h1 {
     display: flex;
     padding-bottom: 162px;
 }
-
-/* #works .portfoliosite img {
-    padding-bottom: 36px;
-} */
 
 #works .portfolio_group {
     padding-left: 7%;
@@ -478,13 +554,28 @@ h1 {
 }
 
 #works .works_btn button {
-    font-size: 24px;
+    font-size: 20px;
     color: #ffffff;
-    width: 400px;
-    height: 80px;
+    width: 32%;
     background: #666666;
     padding: 10px 20px;
+    position: relative;
 }
+
+#works .works_btn button::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    transform-origin: calc(100% - 1px) 50%;
+}
+
+
 
 /* skill */
 #skill {
@@ -500,22 +591,23 @@ h1 {
 #skill .skill_my_icon {
     width: 60px;
     position: absolute;
-    top: 120px;
-    left: -54px;
+    top: 93px;
+    left: -53px;
+    z-index: 5;
 }
 
 #skill .skill_container p {
-    font-size: 18px;
     margin-bottom: 108px;
+    line-height: 2.22;
 }
 
 #skill .skill_container .mouse_icon {
-    width: 204px;
+    width: 140px;
     padding-bottom: 90px;
 }
 
 #skill .skill_container .pc_icon {
-    width: 227px;
+    width: 150px;
     padding-bottom: 90px;
 }
 
@@ -524,7 +616,6 @@ h1 {
 }
 
 #skill .skill_box ul {
-    font-size: 24px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -541,8 +632,8 @@ h1 {
 }
 
 #skill .skill_box ul li {
-    border-right: 1px solid #000;
-    padding: 0 62px;
+    border-right: 1px solid #666666;
+    padding: 0 56px;
 }
 
 /* contact */
@@ -551,16 +642,15 @@ h1 {
 }
 
 #contact p {
-    font-size: 18px;
     margin-bottom: 90px;
+    line-height: 2.22;
 }
 
 #contact .contact_btn button {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #000000;
-    width: 600px;
-    height: 80px;
+    width: 44%;
     background: none;
     border: 2px solid #000000;
     padding: 10px 20px;
@@ -568,27 +658,30 @@ h1 {
     position: relative;
 }
 
-#contact .contact_btn ::after {
+#contact .contact_btn button::after {
     content: "";
     position: absolute;
-    top: 28px;
-    right: 32px;
-    border: 10px solid transparent;
-    border-left: 10px solid #000000;
+    top: 18px;
+    right: 18px;
+    border: 8px solid transparent;
+    border-left: 8px solid #000000;
+}
+
+#contact .contact_btn button:hover::after {
+    right: 30px;
 }
 
 #contact .contact_border {
     width: 616px;
-    border: 1px solid #000000;
+    border: 1px solid #666666;
     margin: 0 auto 90px;
 }
 
 .line_btn button {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #000000;
-    width: 400px;
-    height: 80px;
+    width: 34%;
     background: none;
     border: 2px solid #000000;
     padding: 10px 20px;
@@ -596,19 +689,23 @@ h1 {
     position: relative;
 }
 
-.line_btn ::after {
+.line_btn button::after {
     content: "";
     position: absolute;
-    top: 28px;
-    right: 32px;
-    border: 10px solid transparent;
-    border-left: 10px solid #000000;
+    top: 18px;
+    right: 18px;
+    border: 8px solid transparent;
+    border-left: 8px solid #000000;
+}
+
+.line_btn button:hover::after {
+    right: 30px;
 }
 
 /* footer */
 #footer {
     max-width: 1920px;
-    height: 100px;
+    height: 50px;
     background: #666666;
 }
 
@@ -634,13 +731,15 @@ h1 {
 }
 
 .about_body h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    border-left: 16px solid #f15a24;
+    border-left: 12px solid #f15a24;
     border-bottom: 2px solid #f15a24;
-    padding: 0 0 10px 36px;
+    opacity: 0.7;
+    padding: 0 0 10px 28px;
     margin-bottom: 90px;
 }
+
 
 #profile table {
     width: 100%;
@@ -648,7 +747,6 @@ h1 {
 
 #profile table th,
 #profile table td {
-    font-size: 16px;
     padding-bottom: 36px;
 }
 
@@ -663,10 +761,8 @@ h1 {
 #my_life .history {
     display: flex;
     gap: 72px;
-    align-items: center;
     margin-left: 10%;
     position: relative;
-    margin-bottom: 72px;
 }
 
 #my_life .history h5 {
@@ -679,16 +775,22 @@ h1 {
     text-align: center;
     font-size: 16px;
     position: relative;
+    margin: 0;
 }
 
 #my_life .about_gray_line {
     position: relative;
 }
 
-#my_life .about_gray_line::before {
+.history div {
+    position: relative;
+}
+
+#my_life .about_gray_line .history div::before {
     content: "";
     position: absolute;
-    left: 194px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 28px;
     width: 1px;
     height: 100%;
@@ -699,11 +801,13 @@ h1 {
 #my_life p {
     margin: 0;
     font-size: 16px;
+    line-height: 2.22;
     width: 70%;
+    margin-bottom: 72px;
 }
 
 .about_body h4 {
-    font-size: 40px;
+    font-size: 32px;
 }
 
 
@@ -729,7 +833,12 @@ h1 {
 }
 
 #policy .policy_p {
-    font-size: 18px;
+    line-height: 2.22;
+}
+
+#policy .policy_text_box .policy_p {
+    max-width: 400px;
+    width: 40%;
 }
 
 #policy .policy_details .sincere {
@@ -742,7 +851,7 @@ h1 {
 }
 
 #works .comment {
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     padding-bottom: 126px;
 }
@@ -753,10 +862,9 @@ h1 {
 }
 
 .contact_btn_orange button {
-    font-size: 40px;
+    font-size: 24px;
     color: #ffffff;
-    width: 616px;
-    height: 104px;
+    width: 44%;
     background: #f15a24;
     opacity: 0.7;
     padding: 10px 20px;
@@ -777,19 +885,84 @@ h1 {
     left: 43%;
 }
 
-.works_body .click {
+/* ドロップダウンメニュー */
+.works_body .click_menu {
     font-size: 32px;
+    border-bottom: solid 1px #000000;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.works_body .click_menu::before,
+.works_body .click_menu::after {
+    content: "";
+    position: absolute;
+    bottom: 18%;
+    left: 88%;
+    width: 2px;
+    height: 14%;
+    background-color: #000000;
+    transform-origin: 50% calc(100% - 1px);
+}
+
+.works_body .click_menu::before {
+    transform: rotate(45deg);
+}
+
+.works_body .click_menu::after {
+    transform: rotate(-45deg);
+}
+
+.works_body .click_item:hover .click_menu_list {
+    visibility: visible;
+    /* 下層メニューを表示 */
+}
+
+.works_body .click_item a {
+    align-items: center;
+    color: #000000;
+    /* メニューアイテム内のリンクテキストの色 */
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    text-decoration: none;
+    /* リンクの下線を非表示 */
+    width: 100%;
+}
+
+/* ドロップダウンメニュー内 */
+.works_body .drop_menu {
+    position: relative;
+}
+
+.works_body .drop_menu_list {
+    background-color: #696969;
+    /* ドロップダウンメニューの背景色 */
+    left: 0;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    /* 下層メニューを非表示 */
+    width: max-content;
+    z-index: 1;
+}
+
+
+.works_body #works .mockup_img a {
+    width: 70%;
 }
 
 .works_body #works .mockup_img {
-    /* width: 721px; */
     padding-bottom: 0;
 }
 
 .works_body #works .work5,
 .works_body #works .cafe_website,
 .works_body #works .portfoliosite {
-    gap: 60px;
+    gap: 10%;
 }
 
 .works_body #works .work_box {
@@ -810,10 +983,9 @@ h1 {
 .works_explain_btn button {
     font-size: 24px;
     color: #000000;
-    width: 320px;
-    height: 56px;
+    width: 160%;
     background: none;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     padding: 10px 20px;
 }
 
@@ -821,8 +993,8 @@ h1 {
     content: "";
     position: absolute;
     top: 50%;
-    left: 86%;
-    width: 80px;
+    left: 134%;
+    width: 50%;
     border: 1px solid #000000;
 }
 
@@ -834,36 +1006,41 @@ h1 {
 }
 
 /* contact.html */
-.contact_body h2 {
+.contact_body #contact h2 {
     font-size: 32px;
 }
 
-.contact_body h3 {
-    font-size: 40px;
+.contact_body #contact h3 {
+    font-size: 24px;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    margin-bottom: 90px;
 }
 
-/* #contact {
+#contact .content_flow,
+#contact .contact_form {
     position: relative;
 }
 
-.contact_body h3 ::before,
-.contact_body h3 ::after {
+.contact_body #contact h3::after {
     content: "";
     position: absolute;
-    top: 10px;
-    width: 614px;
-    border: 1px solid #f15a24;
-} */
+    top: -1%;
+    left: 31%;
+    width: 32%;
+    padding: 32px;
+    border-bottom: 2px double #f15a24;
+    border-top: 2px double #f15a24;
+}
 
 .gray_line {
     position: relative;
+    margin-bottom: 270px;
 }
 
 .gray_line::before {
     content: "";
     position: absolute;
-    left: 50px;
+    left: 30px;
     top: 0;
     bottom: 0;
     width: 1px;
@@ -872,7 +1049,7 @@ h1 {
 
 .number {
     position: relative;
-    padding-left: 190px;
+    padding-left: 112px;
     counter-increment: step;
 }
 
@@ -881,34 +1058,39 @@ h1 {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: #666666;
     color: #ffffff;
     text-align: center;
-    line-height: 100px;
+    line-height: 60px;
     font-weight: bold;
     z-index: 1;
-    font-size: 40px;
+    font-size: 24px;
 }
 
 .hearing_list {
     margin-bottom: 90px;
 }
 
-.number.hearing p {
+#contact .number.hearing p {
     margin-bottom: 18px;
 }
 
 .hearing_list ul {
     display: flex;
     font-size: 18px;
-    gap: 40px;
+    gap: 8px;
+}
+
+.hearing_list ul li {
+    border: solid 1px #000000;
+    padding: 4px 12px;
 }
 
 .contact_body h4 {
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .contact_body .flow_design .number {
@@ -972,14 +1154,15 @@ button:hover {
 }
 
 .work5_body .work5_page p {
+    font-size: 12px;
     text-align: right;
     padding-bottom: 72px;
 }
 
 .work5_body h2 {
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 100;
-    padding-bottom: 18px;
+    padding-bottom: 8px;
     color: #000000;
     text-align: left;
     margin: 0;
@@ -992,12 +1175,12 @@ button:hover {
 
 .work5_body #work5_box p {
     padding-bottom: 36px;
+    line-height: 2.22;
 }
 
 .work5_body h3 {
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 18px;
+    font-size: 14px;
+    padding-bottom: 8px;
     margin: 0;
 }
 
@@ -1016,12 +1199,12 @@ button:hover {
     margin: 234px 0;
 }
 
-#work5_box h4 {
-    font-size: 18px;
+#work5_box .work5_text h4 {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #work5_box .work5_text p {
-    font-size: 18px;
     padding-bottom: 72px;
     width: 70%;
 }
@@ -1029,10 +1212,11 @@ button:hover {
 #work5_box .work5_text li {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.work_slider_box .works_other {
-    font-size: 24px;
+#work5_box .work_slider_box .works_other {
+    font-size: 20px;
     padding-left: 324px;
     position: relative;
 }
@@ -1079,7 +1263,8 @@ button:hover {
 }
 
 #work5_box .work_slider_box .work_slider p {
-    font-size: 16px;
+    font-size: 14px;
     padding-left: 0;
-    padding-bottom: 0;
+    padding-bottom: 8;
+    line-height: 0;
 }
