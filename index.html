@@ -74,22 +74,22 @@
                 </div>
                 <p class="copyright">&copy; Ami Umegawa 2025</p>
             </div>
+        </div>
+        <!-- スマホ版メニュー -->
+        <div class="sp_btn">
+            <span></span>
+        </div>
 
-            <!-- スマホ版メニュー -->
-            <div class="sp_btn">
-                <span></span>
-            </div>
-            <nav class="sp_nav">
-                <ul>
-                    <li><a href="#top">Top</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skill">Skill</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="#top">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
             <div class="sp_sns_wrap">
-                <div class="sns_icon">
+                <div class="sp_sns_icon">
                     <a href="https://www.instagram.com/ami_webdesignn">
                         <img src="./images/SVG/Instagram_icon.svg" alt="Instagramアイコン">
                     </a>
@@ -100,16 +100,16 @@
                         <img src="./images/SVG/Facebook_icon.svg" alt="Facebookアイコン">
                     </a>
                 </div>
-                <p class="copyright">&copy; Ami Umegawa 2025</p>
+                <p class="sp_copyright">&copy; Ami Umegawa 2025</p>
             </div>
-        </div>
+        </nav>
     </header>
 
 
     <main class="content">
         <div class="top">
-            <p class="main_text">余白でつくる、<br>ちょうどよさ。</p>
-            <p class="sub_text">ちょうどいい“間”があることで、見た人の心に、自然に届くデザイン。<br>
+            <p class="main_text fade">余白でつくる、<br>ちょうどよさ。</p>
+            <p class="sub_text fade">ちょうどいい“間”があることで、見た人の心に、自然に届くデザイン。<br>
                 <span>「わかりやすさ」 と 「らしさ」 のバランスを余白でつくる。</span><br>
                 「余白」 ＝ 価値を生み出す空間。
             </p>
@@ -275,6 +275,23 @@
     </footer>
 
     <script>
+        // タイトルフェードイン
+        const elements = document.querySelectorAll('.fade');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // 一度表示したら監視を解除
+                }
+            });
+        }, { threshold: 0.1 }); // 画面に10%入ったら発火
+
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // FVアニメーション
         (function () {
             const fh = document.querySelector('.header_wrap');
             window.addEventListener('scroll', () => {
@@ -286,6 +303,7 @@
             });
         }());
 
+        // ハンバーガーメニュー
         $(function () {
             $('.sp_btn').on('click', function () {
                 $('.sp_btn').toggleClass('open');

@@ -8,12 +8,14 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://use.typekit.net/kuw7orj.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body class="work5_body">
@@ -136,30 +138,35 @@
             <img src="./images/1x/work5_website_color-80.jpg" alt="work5モック画像" class="work5_mock">
             <div class="work_slider_box">
                 <p class="works_other">他の作品を見る</p>
-                <div class="work_slider">
-                    <div>
-                        <img src="./images/1x/cafe_website_color-80.jpg" alt="カフェサイトモック画像" class="slider_img">
+                <div class="slider_wrap">
+                    <div class="work_slider">
                         <div>
-                            <p>DESIGN CAFE 様</p>
-                            <p>Webサイト</p>
-                            <p>担当範囲：コーディング</p>
+                            <img src="./images/1x/cafe_website_color-80.jpg" alt="カフェサイトモック画像" class="slider_img">
+                            <div>
+                                <p>DESIGN CAFE 様</p>
+                                <p>Webサイト</p>
+                                <p>担当範囲：コーディング</p>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <img src="./images/1x/portfoliosite_color-80.jpg" alt="ポートフォリオサイトモック画像" class="slider_img">
                         <div>
-                            <p>ポートフォリオサイト</p>
-                            <p>Webサイト</p>
-                            <p>担当範囲：デザイン・コーディング</p>
+                            <img src="./images/1x/portfoliosite_color-80.jpg" alt="ポートフォリオサイトモック画像" class="slider_img">
+                            <div>
+                                <p>ポートフォリオサイト</p>
+                                <p>Webサイト</p>
+                                <p>担当範囲：デザイン・コーディング</p>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <img src="./images/1x/work5_website_color-80.jpg" alt="work5モック画像" class="slider_img">
                         <div>
-                            <p>LIFE hair design 様</p>
-                            <p>Webサイト</p>
-                            <p>担当範囲：デザイン</p>
+                            <img src="./images/1x/work5_website_color-80.jpg" alt="work5モック画像" class="slider_img">
+                            <div>
+                                <p>LIFE hair design 様</p>
+                                <p>Webサイト</p>
+                                <p>担当範囲：デザイン</p>
+                            </div>
                         </div>
+                        <div class="pagination"></div>
+                        <div class="swiper_btn_prev"></div>
+                        <div class="swiper_btn_next"></div>
                     </div>
                 </div>
             </div>
@@ -181,20 +188,45 @@
     </footer>
 
     <script>
-        $('.work_slider').slick({
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            // responsive: [
-            //     {
-            //         breakpoint: 767,
-            //         settings: {
-            //             slidesToShow: 1,
-            //             slidesToScroll: 1,
-            //         }
-            //     },
-            // ]
+        // $('.work_slider').slick({
+        //     autoplay: true,
+        //     autoplaySpeed: 3000,
+        //     // centerMode: true,
+        //     centerPadding: "50px",
+        //     slidesToShow: 2,
+        //     slidesToScroll: 1,
+        //     // responsive: [
+        //     //     {
+        //     //         breakpoint: 767,
+        //     //         settings: {
+        //     //             slidesToShow: 1,
+        //     //             slidesToScroll: 1,
+        //     //         }
+        //     //     },
+        //     // ]
+        // });
+
+        const swiper = new Swiper(".slider_wrap", {
+            loop: true, // ループ
+            speed: 1500, // 少しゆっくり(デフォルトは300)
+            slidesPerView: 1.5, // 一度に表示する枚数
+            spaceBetween: 30, // スライド間の距離
+            centeredSlides: true, // アクティブなスライドを中央にする
+            autoplay: {
+                // 自動再生
+                delay: 1000, // 1秒後に次のスライド
+                disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+            },
+            // ページネーション
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // 前後の矢印
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
     </script>
 </body>
