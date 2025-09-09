@@ -29,12 +29,12 @@ h3 {
 /* ファーストビュー */
 #fv {
     max-width: 1920px;
-    height: 750px;
+    height: 800px;
     display: block;
     text-align: center;
     position: relative;
     margin-bottom: 162px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #fv .fly-in {
@@ -42,6 +42,7 @@ h3 {
     left: 50%;
     top: 103px;
     z-index: -50;
+    transform: translateX(-50%);
 }
 
 #fv .fly-in div {
@@ -201,6 +202,7 @@ h1 {
     top: 56%;
 }
 
+/* FVアニメーション */
 .fly-in div {
     animation: switch 32s linear infinite;
 }
@@ -270,7 +272,7 @@ h1 {
     bottom: -115px;
 }
 
-/* 線のアニメーション */
+/* スクロールバーのアニメーション */
 @keyframes scroll {
     0% {
         transform: scale(1, 0);
@@ -315,13 +317,13 @@ h1 {
     font-weight: bold;
 }
 
-/* なビゲーションメニューのアニメーション */
-#header .pc_nav li a.line {
+/* ナビゲーションメニューのアニメーション */
+#header .pc_nav li a {
     padding-bottom: 5px;
     position: relative;
 }
 
-#header .pc_nav li a.line::before {
+#header .pc_nav li a::before {
     background: #ff701e;
     content: '';
     width: 100%;
@@ -334,7 +336,7 @@ h1 {
     transition: transform .3s;
 }
 
-#header .pc_nav li a.line:hover::before {
+#header .pc_nav li a:hover::before {
     transform-origin: left top;
     transform: scale(1, 1);
 }
@@ -349,6 +351,10 @@ h1 {
     display: block;
     width: 40px;
     margin-bottom: 36px;
+}
+
+#header .sns_icon img:hover {
+    transform: scale(1.1);
 }
 
 #header .copyright {
@@ -466,7 +472,6 @@ h1 {
     width: 240px;
     background: none;
     border: 2px solid #666666;
-    cursor: pointer;
     padding: 10px 20px;
 }
 
@@ -556,7 +561,7 @@ h1 {
 #works .works_btn button {
     font-size: 20px;
     color: #ffffff;
-    width: 32%;
+    width: 30%;
     background: #666666;
     padding: 10px 20px;
     position: relative;
@@ -650,7 +655,7 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     color: #000000;
-    width: 44%;
+    width: 40%;
     background: none;
     border: 2px solid #000000;
     padding: 10px 20px;
@@ -681,7 +686,7 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     color: #000000;
-    width: 34%;
+    width: 30%;
     background: none;
     border: 2px solid #000000;
     padding: 10px 20px;
@@ -738,6 +743,7 @@ h1 {
     opacity: 0.7;
     padding: 0 0 10px 28px;
     margin-bottom: 90px;
+    width: 90%;
 }
 
 
@@ -838,7 +844,7 @@ h1 {
 
 #policy .policy_text_box .policy_p {
     max-width: 400px;
-    width: 40%;
+    width: 20%;
 }
 
 #policy .policy_details .sincere {
@@ -874,22 +880,29 @@ h1 {
 /* works.html */
 
 .works_body #works {
-    position: relative;
-}
-
-.works_body #works h2 {
+    margin-bottom: 252px;
     text-align: center;
 }
 
-.works_body #works .works_my_pic {
-    left: 43%;
+.works_body #works .works_heading {
+    position: relative;
+    display: inline-block;
 }
+
+.works_body #works .works_my_pic {
+    width: 46px;
+    position: absolute;
+    top: 62px;
+    left: 28px;
+    z-index: 20;
+}
+
 
 /* ドロップダウンメニュー */
 .works_body .click_menu {
-    font-size: 32px;
+    font-size: 20px;
     border-bottom: solid 1px #000000;
-    width: 40%;
+    width: 24%;
     text-align: center;
     position: relative;
     margin-bottom: 90px;
@@ -900,7 +913,7 @@ h1 {
 .works_body .click_menu::after {
     content: "";
     position: absolute;
-    bottom: 18%;
+    bottom: 42%;
     left: 88%;
     width: 2px;
     height: 14%;
@@ -916,7 +929,7 @@ h1 {
     transform: rotate(-45deg);
 }
 
-.works_body .click_item:hover .click_menu_list {
+.works_body .click_item:hover .drop_menu_list {
     visibility: visible;
     /* 下層メニューを表示 */
 }
@@ -926,11 +939,15 @@ h1 {
     color: #000000;
     /* メニューアイテム内のリンクテキストの色 */
     display: flex;
-    height: 50px;
+    height: 72px;
     justify-content: center;
     text-decoration: none;
     /* リンクの下線を非表示 */
     width: 100%;
+}
+
+.works_body .click_item a:hover {
+    transform: scale(1.1);
 }
 
 /* ドロップダウンメニュー内 */
@@ -939,24 +956,31 @@ h1 {
 }
 
 .works_body .drop_menu_list {
-    background-color: #696969;
-    /* ドロップダウンメニューの背景色 */
+    /* background-color: #666666;
+    ドロップダウンメニューの背景色 */
+    border-bottom: solid 1px #000000;
     left: 0;
     position: absolute;
     top: 100%;
     visibility: hidden;
     /* 下層メニューを非表示 */
-    width: max-content;
+    width: 100%;
     z-index: 1;
 }
 
+.works_body #works .work5 a,
+.works_body #works .cafe_website a,
+.works_body #works .portfoliosite a {
+    width: 60%;
+}
 
 .works_body #works .mockup_img a {
-    width: 70%;
+    width: 60%;
 }
 
 .works_body #works .mockup_img {
     padding-bottom: 0;
+    width: 100%;
 }
 
 .works_body #works .work5,
@@ -969,6 +993,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    width: 40%;
+    text-align: start;
 }
 
 .works_body #works .portfoliosite {
@@ -977,13 +1003,15 @@ h1 {
 
 .works_explain_btn {
     position: relative;
-
+    margin-top: 36px;
 }
 
 .works_explain_btn button {
-    font-size: 24px;
+    font-size: 18px;
     color: #000000;
-    width: 160%;
+    /* width: 100%; */
+    max-width: 80%;
+    min-width: 60%;
     background: none;
     border: 1px solid #000000;
     padding: 10px 20px;
@@ -993,8 +1021,8 @@ h1 {
     content: "";
     position: absolute;
     top: 50%;
-    left: 134%;
-    width: 50%;
+    left: 52%;
+    width: 16%;
     border: 1px solid #000000;
 }
 
@@ -1003,6 +1031,7 @@ h1 {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+    /* width: 20%; */
 }
 
 /* contact.html */
@@ -1011,7 +1040,7 @@ h1 {
 }
 
 .contact_body #contact h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     margin-bottom: 90px;
 }
@@ -1024,7 +1053,7 @@ h1 {
 .contact_body #contact h3::after {
     content: "";
     position: absolute;
-    top: -1%;
+    top: -1.3%;
     left: 31%;
     width: 32%;
     padding: 32px;
@@ -1067,7 +1096,7 @@ h1 {
     line-height: 60px;
     font-weight: bold;
     z-index: 1;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .hearing_list {
@@ -1080,7 +1109,7 @@ h1 {
 
 .hearing_list ul {
     display: flex;
-    font-size: 18px;
+    font-size: 14px;
     gap: 8px;
 }
 
@@ -1090,7 +1119,8 @@ h1 {
 }
 
 .contact_body h4 {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 0 0 18px;
 }
 
 .contact_body .flow_design .number {
@@ -1109,7 +1139,6 @@ form {
 }
 
 label {
-    font-size: 18px;
     display: block;
     text-align: left;
     margin: 36px 0 18px;
@@ -1128,20 +1157,27 @@ form textarea#message {
     margin-bottom: 70px;
 }
 
+form input:required::after {
+    content: " *";
+    color: red;
+}
+
+form label.required::after {
+    content: " *";
+    color: red;
+}
+
+
 form button {
-    font-size: 24px;
-    width: 400px;
-    padding: 18px 24px;
+    font-size: 18px;
+    width: 40%;
+    padding: 10px 20px;
     background: #666666;
     color: #ffffff;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     margin-bottom: 90px;
-}
-
-button:hover {
-    background: #f15a24;
 }
 
 /* work5.html */
@@ -1169,7 +1205,7 @@ button:hover {
 }
 
 .work5_body .line {
-    border: 1px solid #000000;
+    border: 1px solid #666666;
     margin-bottom: 90px;
 }
 
@@ -1268,3 +1304,96 @@ button:hover {
     padding-bottom: 8;
     line-height: 0;
 }
+
+
+
+@media screen and (max-width: 1280px) {
+
+    .pc_nav {
+        display: none;
+    }
+
+    /* ハンバーガーボタン */
+    .sp_btn {
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        position: absolute;
+        top: 23px;
+        right: 25px;
+        z-index: 50;
+    }
+
+    .sp_btn span {
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #ffffff;
+        border-radius: 2px;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: #ffffff;
+        border-radius: 2px;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    .sp_btn.open span {
+        background-color: transparent;
+    }
+
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 45;
+    }
+
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .sp_nav ul li {
+        color: #ffffff;
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {}

@@ -74,6 +74,34 @@
                 </div>
                 <p class="copyright">&copy; Ami Umegawa 2025</p>
             </div>
+
+            <!-- スマホ版メニュー -->
+            <div class="sp_btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sp_sns_wrap">
+                <div class="sns_icon">
+                    <a href="https://www.instagram.com/ami_webdesignn">
+                        <img src="./images/SVG/Instagram_icon.svg" alt="Instagramアイコン">
+                    </a>
+                    <a href="https://x.com/ami_webdesignn">
+                        <img src="./images/SVG/X_icon.svg" alt="Xアイコン">
+                    </a>
+                    <a href="">
+                        <img src="./images/SVG/Facebook_icon.svg" alt="Facebookアイコン">
+                    </a>
+                </div>
+                <p class="copyright">&copy; Ami Umegawa 2025</p>
+            </div>
         </div>
     </header>
 
@@ -122,26 +150,26 @@
 
             <div class="work5">
                 <div class="work5_mockup_group">
-                    <a href="" class="work5_mockup">
+                    <a href="./work5.html" class="work5_mockup">
                         <img src="./images/1x/work5_website-80.jpg" alt="work5モック画像" class="work_img">
                     </a>
                     <p>LIFE hair design 様</p>
                     <p>Webサイト</p>
                     <p>担当範囲：デザイン</p>
                 </div>
-                <a href="" class="work5_mov">
+                <a href="./work5.html" class="work5_mov">
                     <img src="https://placehold.jp/180x267.png" alt="work5sp動画">
                 </a>
-                <a href="" class="work5_sheet">
+                <a href="./work5.html" class="work5_sheet">
                     <img src="./images/1x/work5_sheet-80.jpg" alt="work5モックシート">
                 </a>
             </div>
             <div class="cafe_website">
-                <a href="">
+                <a href="./cafesite.html">
                     <img src="https://placehold.jp/718x484.png" alt="カフェWebサイト動画">
                 </a>
                 <div class="cafe_mockup_group">
-                    <a href="" class="cafe_mockup">
+                    <a href="./cafesite.html" class="cafe_mockup">
                         <img src="./images/1x/cafe_website-80.jpg" alt="カフェWebサイトモック画像" class="work_img">
                     </a>
                     <p>DESIGN CAFE 様</p>
@@ -151,17 +179,17 @@
             </div>
             <div class="portfoliosite">
                 <div class="portfolio_group">
-                    <a href="" class="portfolio_mockup">
+                    <a href="./portfoliosite.html" class="portfolio_mockup">
                         <img src="./images/1x/portfoliosite-80.jpg" alt="ポートフォリオサイトモック画像" class="work_img">
                     </a>
                     <p>ポートフォリオサイト</p>
                     <p>Webサイト</p>
                     <p>担当範囲：デザイン・コーディング</p>
                 </div>
-                <a href="" class="portfolio_sp_mov">
+                <a href="./portfoliosite.html" class="portfolio_sp_mov">
                     <img src="https://placehold.jp/186x262.png" alt="ポートフォリオサイトsp動画">
                 </a>
-                <a href="" class="portfolio_mov">
+                <a href="./portfoliosite.html" class="portfolio_mov">
                     <img src="https://placehold.jp/509x359.png" alt="ポートフォリオサイト動画">
                 </a>
             </div>
@@ -258,6 +286,19 @@
             });
         }());
 
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+                $('body').toggleClass('no-scroll');
+            })
+
+            $('.sp_nav a').on('click', function () {
+                $('.sp_btn').removeClass('open');
+                $('body').removeClass('no-scroll');
+                $('.sp_nav').fadeOut();
+            })
+        })
     </script>
 </body>
 
