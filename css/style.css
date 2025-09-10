@@ -10,6 +10,11 @@ body {
     background-size: contain;
 }
 
+body.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
 h2 {
     text-align: center;
     font-size: 56px;
@@ -158,8 +163,8 @@ h3 {
 #fv .left_cross_line {
     width: 111px;
     position: absolute;
-    left: -92%;
-    top: 77%;
+    left: -42%;
+    top: 84%;
 }
 
 #fv .center_leaf {
@@ -1303,13 +1308,48 @@ form button {
     margin-bottom: 72px;
 }
 
-.slick-slide img {
-    scale: 0.8;
+.swiper-slide img {
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
 }
 
-.slick-slide.slick-current img {
-    scale: 1;
+.swiper-slide-active img {
+    transform: scale(1);
 }
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+    height: 50px;
+    width: 50px;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 50px;
+    margin: auto;
+    width: 50px;
+}
+
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+    background-image: url(../images/SVG/button_prev.svg);
+}
+
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+    background-image: url(../images/SVG/button_next.svg);
+}
+
+/* 画像サイズ調整
+.swiper-slide img {
+    height: auto;
+    width: 100%;
+} */
 
 .work_slider_box {
     margin-bottom: 80px;
@@ -1364,7 +1404,7 @@ form button {
     padding-bottom: 36px;
 }
 
-#work5_box .work_slider_box .work_slider p {
+#work5_box .swiper-slide p {
     font-size: 14px;
     padding-left: 0;
     padding-bottom: 8;
@@ -1434,11 +1474,13 @@ form button {
     .sp_btn.open span::before {
         bottom: 0;
         transform: rotate(45deg);
+        background: #ffffff;
     }
 
     .sp_btn.open span::after {
         top: 0;
         transform: rotate(-45deg);
+        background: #ffffff;
     }
 
     .sp_nav {
@@ -1451,18 +1493,25 @@ form button {
         z-index: 45;
     }
 
+    .sp_nav .sp_nav_menu {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15%;
+    }
+
     .sp_nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100%;
-        gap: 30px;
+        gap: 40px;
     }
 
     .sp_nav ul li {
         color: #ffffff;
-        font-size: 18px;
+        font-size: 32px;
     }
 
     .sp_sns_wrap {
@@ -1470,6 +1519,15 @@ form button {
         width: 8%;
         flex-direction: column;
         margin: 0 auto;
+        align-items: center;
+    }
+
+    .sp_sns_icon svg {
+        padding-bottom: 60%;
+    }
+
+    .sp_copyright {
+        display: none;
     }
 
     #about .my .my_img {
@@ -1499,6 +1557,7 @@ form button {
     }
 
     #fv {
+        height: 700px;
         margin-bottom: 54px;
     }
 
