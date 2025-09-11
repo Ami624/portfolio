@@ -1260,7 +1260,7 @@ form button {
 }
 
 .work5_body #work5_box p {
-    padding-bottom: 36px;
+    /* padding-bottom: 36px; */
     line-height: 2.22;
 }
 
@@ -1290,15 +1290,33 @@ form button {
     font-weight: bold;
 }
 
-#work5_box .work5_text p {
-    padding-bottom: 72px;
-    width: 70%;
-}
-
 #work5_box .work5_text li {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding-bottom: 72px;
+}
+
+#work5_box .work5_text p {
+    /* padding-bottom: 72px; */
+    width: 70%;
+    position: relative;
+    padding-left: 24px;
+}
+
+#work5_box .work5_text .work5_text_p {
+    width: 70%;
+}
+
+#work5_box .work5_text .work5_text_p p {
+    padding-bottom: 8px;
+    width: 70%;
+}
+
+#work5_box .work5_text .work5_text_p p::before {
+    content: "・";
+    left: 0;
+    position: absolute;
 }
 
 #work5_box .work_slider_box .works_other {
@@ -1567,7 +1585,7 @@ form button {
     }
 
     #work5_box .work5_text p {
-        width: 100%;
+        width: 90%;
     }
 
     #works .works_btn button {
