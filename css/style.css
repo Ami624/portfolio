@@ -1288,6 +1288,7 @@ form button {
 #work5_box .work5_text h4 {
     font-size: 14px;
     font-weight: bold;
+    width: 20%;
 }
 
 #work5_box .work5_text li {
@@ -1299,18 +1300,19 @@ form button {
 
 #work5_box .work5_text p {
     /* padding-bottom: 72px; */
-    width: 70%;
+    width: 100%;
     position: relative;
     padding-left: 24px;
 }
 
 #work5_box .work5_text .work5_text_p {
-    width: 70%;
+    width: 100%;
 }
 
 #work5_box .work5_text .work5_text_p p {
     padding-bottom: 8px;
-    width: 70%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #work5_box .work5_text .work5_text_p p::before {
@@ -1336,11 +1338,24 @@ form button {
     transform: scale(1);
 }
 
+
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev,
 .swiper-button-next {
+    top: 50%;
+    transform: translateY(-50%);
     height: 50px;
     width: 50px;
+    position: absolute;
+    z-index: 100;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    left: 50%;
 }
 
 /* 前へ次への矢印カスタマイズ */
@@ -1349,9 +1364,9 @@ form button {
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
-    height: 50px;
-    margin: auto;
-    width: 50px;
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 
 /* 前への矢印カスタマイズ */
@@ -1364,14 +1379,9 @@ form button {
     background-image: url(../images/SVG/button_next.svg);
 }
 
-/* 画像サイズ調整
-.swiper-slide img {
-    height: auto;
-    width: 100%;
-} */
-
 .work_slider_box {
     margin-bottom: 80px;
+    position: relative;
 }
 
 .work_slider_box .works_other::before,
@@ -1427,7 +1437,7 @@ form button {
     font-size: 14px;
     padding-left: 0;
     padding-bottom: 8;
-    line-height: 0;
+    /* line-height: 0; */
 }
 
 
@@ -1526,14 +1536,20 @@ form button {
 
     .sp_sns_wrap {
         display: flex;
-        width: 8%;
         flex-direction: column;
         margin: 0 auto;
         align-items: center;
     }
 
+    .sp_sns_icon {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
     .sp_sns_icon svg {
         padding-bottom: 60%;
+        width: 40px;
     }
 
     .sp_copyright {
@@ -1634,10 +1650,12 @@ form button {
 
     #about .my {
         width: 100%;
+        display: contents;
     }
 
     #about .my .my_img {
         width: 40%;
+        order: -1;
     }
 
     #about .profile_btn button {
