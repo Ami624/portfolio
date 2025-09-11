@@ -40,6 +40,81 @@
                 <p class="copyright">&copy; Ami Umegawa 2025</p>
             </div>
         </div>
+        <!-- スマホ版メニュー -->
+        <div class="sp_btn">
+            <span></span>
+        </div>
+
+        <nav class="sp_nav">
+            <div class="sp_nav_menu">
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="sp_sns_wrap">
+                    <div class="sp_sns_icon">
+                        <a href="https://www.instagram.com/ami_webdesignn">
+                            <svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 55.43 55.43">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #ffffff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="_レイアウト" data-name="レイアウト">
+                                    <g>
+                                        <path class="cls-1"
+                                            d="M39.22,0h-23.02C7.27,0,0,7.27,0,16.21v23.02c0,8.94,7.27,16.21,16.21,16.21h23.02c8.94,0,16.21-7.27,16.21-16.21v-23.02C55.43,7.27,48.16,0,39.22,0ZM50.26,39.22c0,6.09-4.95,11.04-11.04,11.04h-23.02c-6.09,0-11.04-4.95-11.04-11.04v-23.02c0-6.09,4.95-11.04,11.04-11.04h23.02c6.09,0,11.04,4.95,11.04,11.04v23.02Z" />
+                                        <path class="cls-1"
+                                            d="M42.53,9.48c-1.91,0-3.45,1.55-3.45,3.45s1.55,3.45,3.45,3.45,3.45-1.55,3.45-3.45-1.55-3.45-3.45-3.45Z" />
+                                        <path class="cls-1"
+                                            d="M27.72,13.39c-7.9,0-14.33,6.43-14.33,14.33s6.43,14.33,14.33,14.33,14.33-6.43,14.33-14.33-6.43-14.33-14.33-14.33ZM27.72,36.88c-5.05,0-9.16-4.11-9.16-9.16s4.11-9.16,9.16-9.16,9.16,4.11,9.16,9.16-4.11,9.16-9.16,9.16Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/ami_webdesignn">
+                            <svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" width="80"
+                                height="80" viewBox="0 0 1200 1226.37">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #ffffff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="_レイヤー_1-2" data-name="レイヤー 1">
+                                    <path class="cls-1"
+                                        d="M714.16,519.28L1160.89,0h-105.86l-387.89,450.89L357.33,0H0l468.49,681.82L0,1226.37h105.87l409.63-476.15,327.18,476.15h357.33l-485.86-707.09h.03ZM569.16,687.83l-47.47-67.89L144.01,79.69h162.6l304.8,435.99,47.47,67.89,396.2,566.72h-162.6l-323.31-462.45v-.03Z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 55.43 55.09">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #ffffff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="_レイアウト" data-name="レイアウト">
+                                    <path class="cls-1"
+                                        d="M23.38,55.09v-19.37h-7.04v-8.01h7.04v-6.11c0-6.95,4.14-10.78,10.47-10.78,3.03,0,6.2.54,6.2.54v6.82h-3.49c-3.44,0-4.52,2.14-4.52,4.33v5.2h7.69l-1.23,8.01h-6.46v19.37c13.25-2.08,23.38-13.55,23.38-27.38C55.43,12.41,43.02,0,27.72,0S0,12.41,0,27.72c0,13.83,10.14,25.3,23.38,27.38Z" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="sp_copyright">&copy; Ami Umegawa 2025</p>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="content">
@@ -156,6 +231,22 @@
     <footer id="footer">
         <div></div>
     </footer>
+    <script>
+        // ハンバーガーメニュー
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+                $('body').toggleClass('no-scroll');
+            })
+
+            $('.sp_nav a').on('click', function () {
+                $('.sp_btn').removeClass('open');
+                $('body').removeClass('no-scroll');
+                $('.sp_nav').fadeOut();
+            })
+        })
+    </script>
 </body>
 
 </html>

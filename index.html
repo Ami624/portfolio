@@ -193,8 +193,12 @@
 
 
         <section id="works">
-            <img src="./images/2x/works_my_pic@2x.png" alt="works上アイコン" class="works_my_pic">
-            <h2><span>W</span>orks</h2>
+            <div class="works_heading">
+                <div class="works_my_icon">
+                    <img src="./images/2x/works_my_pic@2x.png" alt="works上アイコン" class="works_my_pic">
+                </div>
+                <h2><span>W</span>orks</h2>
+            </div>
 
             <div class="work5">
                 <div class="work5_mockup_group">
@@ -323,18 +327,6 @@
     </footer>
 
     <script>
-        $('.sp_btn').on('click', function () {
-            $('.sp_btn').toggleClass('open');
-            $('.sp_nav').fadeToggle();
-            $('body').toggleClass('no-scroll');
-        })
-
-        $('.sp_nav a').on('click', function () {
-            $('.sp_btn').removeClass('open');
-            $('body').removeClass('no-scroll');
-            $('.sp_nav').fadeOut();
-        })
-
         // タイトルフェードイン
         const elements = document.querySelectorAll('.fade');
 
