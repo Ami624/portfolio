@@ -509,6 +509,7 @@ h1 {
     background: none;
     border: 2px solid #666666;
     padding: 10px 20px;
+    /* position: relative; */
 }
 
 #about .profile_btn .about_btn_dot {
@@ -697,8 +698,8 @@ h1 {
 #contact .contact_btn button::after {
     content: "";
     position: absolute;
-    top: 18px;
-    right: 18px;
+    top: 32%;
+    right: 4%;
     border: 8px solid transparent;
     border-left: 8px solid #000000;
 }
@@ -728,8 +729,8 @@ h1 {
 .line_btn button::after {
     content: "";
     position: absolute;
-    top: 18px;
-    right: 18px;
+    top: 32%;
+    right: 4%;
     border: 8px solid transparent;
     border-left: 8px solid #000000;
 }
@@ -1437,12 +1438,43 @@ form button {
     font-size: 14px;
     padding-left: 0;
     padding-bottom: 8;
-    /* line-height: 0; */
 }
 
 
 
 @media screen and (max-width: 1280px) {
+    h1 {
+        font-size: 20px;
+        left: -55%;
+        top: 51%;
+    }
+
+    #about .my .my_img {
+        width: 90%;
+    }
+
+    /* works */
+    #works .works_btn button {
+        font-size: 18px;
+    }
+
+    /* contact */
+    #contact .contact_btn button {
+        font-size: 18px;
+    }
+
+    .line_btn button {
+        font-size: 18px;
+    }
+
+    /* work5.html */
+    #works .works_btn button {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
 
     /* ハンバーガーボタン */
     .sp_btn {
@@ -1556,24 +1588,10 @@ form button {
         display: none;
     }
 
-    #about .my .my_img {
-        width: 55%;
-    }
-
-    /* work5.html */
-    #works .works_btn button {
-        width: 40%;
-    }
-}
-
-
-@media screen and (max-width: 1000px) {
     .content {
         padding: 0 4%;
     }
 
-    /* .pc_nav,
-    .sns_wrap  */
     .header_wrap {
         display: none;
     }
@@ -1586,9 +1604,67 @@ form button {
         margin-bottom: 108px;
     }
 
+    .top .main_text {
+        font-size: 40px;
+        padding-bottom: 36px;
+    }
+
+    /* about */
+    #about {
+        flex-direction: column;
+        margin-bottom: 108px;
+    }
+
+    #about .about_text {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #about .my_name {
+        padding-bottom: 36px;
+    }
+
+    #about .my_explanation {
+        font-size: 16px;
+    }
+
+    #about .my {
+        width: 100%;
+        display: contents;
+    }
+
+    #about .my .my_img {
+        width: 40%;
+        order: -1;
+        margin: 0 auto;
+    }
+
+    #about .profile_btn button {
+        font-size: 18px;
+        width: 300px;
+    }
+
+    #about .profile_btn button::before,
+    #about .profile_btn button::after {
+        right: 41%;
+    }
+
+    #about .profile_btn .about_btn_dot {
+        width: 6%;
+        left: 270px;
+        top: 14px;
+    }
+
+    /* skill */
+    #skill .skill_box ul li {
+        padding: 0 40px;
+    }
+
+    /* contact */
     #contact .contact_btn button {
         width: 50%;
     }
+
 
     /* about.html */
     .contact_btn_orange button {
@@ -1612,12 +1688,16 @@ form button {
 
 @media screen and (max-width: 768px) {
     h2 {
-        font-size: 40px;
+        font-size: 32px;
         margin-bottom: 72px;
     }
 
     h2 span {
-        font-size: 80px;
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 24px;
     }
 
     #fv {
@@ -1626,60 +1706,48 @@ form button {
     }
 
     .top {
-        margin-bottom: 54px;
+        margin-bottom: 80px;
     }
 
     .top .main_text {
-        font-size: 40px;
-        padding-bottom: 36px;
+        font-size: 32px;
+        padding-bottom: 24px;
+    }
+
+    .top .sub_text {
+        font-size: 16px;
     }
 
     /* about */
-    #about {
-        flex-direction: column;
-        margin-bottom: 108px;
+    #about,
+    #works,
+    #skill {
+        margin-bottom: 60px;
     }
 
-    #about .about_text {
-        width: 100%;
+    #about .job_titel {
+        font-size: 12px;
     }
 
     #about .my_name {
-        padding-bottom: 36px;
-    }
-
-    #about .my {
-        width: 100%;
-        display: contents;
-    }
-
-    #about .my .my_img {
-        width: 40%;
-        order: -1;
+        font-size: 24px;
     }
 
     #about .profile_btn button {
-        width: 200px;
-    }
-
-    #about .profile_btn .about_btn_dot {
-        left: -20px;
+        font-size: 16px;
     }
 
     /* works */
-    #works,
-    #skill {
-        margin-bottom: 108px;
-    }
-
     #works h2 {
         margin-bottom: 72px;
         text-align: center;
     }
 
-    /* #works .works_my_pic {
-        left: 272px;
-    } */
+    #works .works_my_pic {
+        width: 40px;
+        top: -6px;
+        left: -8px;
+    }
 
     #works .works_heading {
         position: relative;
@@ -1691,6 +1759,10 @@ form button {
         position: absolute;
         top: 28px;
         left: 16px;
+    }
+
+    #works p {
+        font-size: 10px;
     }
 
     #works .work5,
@@ -1707,9 +1779,25 @@ form button {
         display: none;
     }
 
+    #works .works_btn button {
+        font-size: 16px;
+    }
+
     /* skill */
     #skill .skill_container h3 {
         margin-top: 0;
+    }
+
+    #skill .skill_container p {
+        font-size: 14px;
+    }
+
+    #skill .skill_container .mouse_icon {
+        width: 100px;
+    }
+
+    #skill .skill_container .pc_icon {
+        width: 110px;
     }
 
     #skill .skill_container .mouse_icon,
@@ -1725,23 +1813,24 @@ form button {
         margin-bottom: 72px;
     }
 
-    #works .works_my_pic {
-        width: 40px;
+    #skill .skill_box ul {
+        font-size: 14px;
+    }
+
+    #skill .skill_box ul li {
+        padding: 0 32px;
     }
 
     #skill .skill_my_icon {
         width: 40px;
-        top: 72px;
+        top: 44px;
         left: -35px;
     }
 
     /* contact */
     #contact p {
+        font-size: 14px;
         margin-bottom: 54px;
-    }
-
-    #contact .contact_btn button {
-        margin-bottom: 18px;
     }
 
     #contact .contact_border {
@@ -1749,15 +1838,48 @@ form button {
     }
 
     #contact .contact_btn button {
+        font-size: 16px;
         width: 55%;
+        margin-bottom: 18px;
     }
 
     .line_btn button {
+        font-size: 16px;
         margin-bottom: 72px;
     }
 
     /* about.html */
     .contact_btn_orange button {
         width: 80%;
+    }
+
+
+    /* about.html */
+    .about_body h3 {
+        font-size: 18px;
+    }
+
+    .about_body h4 {
+        font-size: 24px;
+    }
+
+    #policy .policy_ring {
+        width: 280px;
+    }
+
+    #policy .policy_text_box {
+        font-size: 14px;
+    }
+
+    #policy .policy_text_box .policy_p {
+        font-size: 14px;
+    }
+
+    #policy .policy_details .sincere {
+        font-size: 14px;
+    }
+
+    #works .comment {
+        font-size: 14px;
     }
 }
