@@ -34,7 +34,7 @@ h3 {
 /* ファーストビュー */
 #fv {
     max-width: 1920px;
-    height: 800px;
+    height: 870px;
     display: block;
     text-align: center;
     position: relative;
@@ -1612,9 +1612,14 @@ form button {
     }
 
     /* about */
+    #profile,
+    #my_life,
+    #policy {
+        margin-bottom: 108px;
+    }
+
     #about {
         flex-direction: column;
-        margin-bottom: 108px;
     }
 
     #about .about_text {
@@ -1708,8 +1713,7 @@ form button {
 
     #fv {
         height: 700px;
-        margin-bottom: 54px;
-        margin-top: 56px;
+        margin: 56px 0 54px 0;
     }
 
     /* .scrollbar {
@@ -1736,12 +1740,6 @@ form button {
     }
 
     /* about */
-    #about,
-    #works,
-    #skill {
-        margin-bottom: 60px;
-    }
-
     #about .job_titel {
         font-size: 12px;
     }
@@ -1857,7 +1855,7 @@ form button {
 
     #contact .contact_btn button {
         font-size: 16px;
-        width: 60%;
+        width: 80%;
         margin-bottom: 18px;
     }
 
@@ -1869,12 +1867,6 @@ form button {
 
 
     /* about.html */
-    #profile,
-    #my_life,
-    #policy {
-        margin-bottom: 108px;
-    }
-
     .about_page .about_profile_img {
         width: 50%;
     }
@@ -1960,6 +1952,14 @@ form button {
 
 
     /* contact.html */
+    .contact_body #contact h3 {
+        padding: 18px 0;
+    }
+
+    .gray_line {
+        margin-bottom: 180px;
+    }
+
     .gray_line::before {
         left: 19px;
         top: 4px;
@@ -1982,11 +1982,7 @@ form button {
     }
 
     .contact_body h4 {
-        font-size: 12px;
-    }
-
-    #contact .number.hearing p {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .contact_body #contact h3::after,
@@ -1995,8 +1991,15 @@ form button {
         height: 2px;
     }
 
+    label {
+        font-size: 14px;
+    }
 
     /* works5.html */
+    .work5_body #work5_box p {
+        padding-bottom: 6px;
+    }
+
     .work5_body .line {
         margin-bottom: 54px;
     }
