@@ -33,8 +33,11 @@ h3 {
 
 /* ファーストビュー */
 #fv {
-    max-width: 1920px;
-    height: 870px;
+    /* max-width: 1920px;
+    height: 800px; */
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
     display: block;
     text-align: center;
     position: relative;
@@ -1328,6 +1331,10 @@ form button {
     margin-bottom: 72px;
 }
 
+.swiper {
+    padding-left: 2.5%;
+}
+
 .swiper-slide img {
     transform: scale(0.8);
     transition: transform 0.3s ease;
@@ -1355,7 +1362,7 @@ form button {
 }
 
 .swiper-button-next {
-    left: 50%;
+    left: 52%;
 }
 
 /* 前へ次への矢印カスタマイズ */
@@ -1615,7 +1622,7 @@ form button {
     #profile,
     #my_life,
     #policy {
-        margin-bottom: 108px;
+        margin-bottom: 88px;
     }
 
     #about {
@@ -1711,10 +1718,10 @@ form button {
         font-size: 20px;
     }
 
-    #fv {
+    /* #fv {
         height: 700px;
         margin: 56px 0 54px 0;
-    }
+    } */
 
     /* .scrollbar {
         display: block;
