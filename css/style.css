@@ -33,8 +33,7 @@ h3 {
 
 /* ファーストビュー */
 #fv {
-    /* max-width: 1920px;
-    height: 800px; */
+    max-width: 1920px;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -47,8 +46,10 @@ h3 {
 
 #fv .fly-in {
     position: absolute;
+    max-width: 500px;
+    width: 50%;
     left: 50%;
-    top: 103px;
+    top: 20%;
     z-index: -50;
     transform: translateX(-50%);
 }
@@ -1285,7 +1286,7 @@ form button {
 
 .work5_mock {
     width: 100%;
-    margin: 234px 0;
+    margin: 160px 0;
 }
 
 #work5_box .work5_text h4 {
@@ -1447,6 +1448,17 @@ form button {
 }
 
 
+/* work3.html */
+.mock_set .work5_mock {
+    margin-bottom: 18px;
+}
+
+#work5_box .mock_set p {
+    padding-bottom: 144px;
+    text-align: center;
+}
+
+
 
 @media screen and (max-width: 1280px) {
     .scrollbar p {
@@ -1455,7 +1467,7 @@ form button {
 
     h1 {
         left: -44%;
-        top: -4%;
+        top: -6%;
     }
 
     #about .my .my_img {
@@ -1597,6 +1609,10 @@ form button {
         display: none;
     }
 
+    h1 {
+        top: -12%;
+    }
+
     .content {
         padding: 0 4%;
     }
@@ -1610,7 +1626,21 @@ form button {
     }
 
     #fv {
-        margin-bottom: 108px;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 90px 0;
+        height: 70vh;
+    }
+
+    #fv .fly-in {
+        position: static;
+        max-width: 300px;
+        width: 50%;
+        left: 50%;
+        top: 25%;
+        transform: none;
     }
 
     .top .main_text {
@@ -1627,6 +1657,7 @@ form button {
 
     #about {
         flex-direction: column;
+        align-items: center;
     }
 
     #about .about_text {
@@ -1660,13 +1691,13 @@ form button {
 
     #about .profile_btn button::before,
     #about .profile_btn button::after {
-        right: 41%;
+        right: 12%;
     }
 
     #about .profile_btn .about_btn_dot {
-        width: 6%;
-        left: 270px;
-        top: 14px;
+        width: 14%;
+        left: -18px;
+        top: 16px;
     }
 
     /* skill */
@@ -1717,11 +1748,6 @@ form button {
     h3 {
         font-size: 20px;
     }
-
-    /* #fv {
-        height: 700px;
-        margin: 56px 0 54px 0;
-    } */
 
     /* .scrollbar {
         display: block;
@@ -2042,5 +2068,17 @@ form button {
     .swiper-button-next {
         height: 30px;
         width: 30px;
+        top: 35%;
     }
+
+
+    /* work3.html */
+    .mock_set .work5_mock {
+        margin-bottom: 6px;
+    }
+
+    #work5_box .mock_set p {
+        padding-bottom: 144px;
+    }
+
 }
