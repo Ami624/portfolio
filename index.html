@@ -56,7 +56,7 @@
         <div class="header_wrap">
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#top">Top</a></li>
+                    <li><a href="#top">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skill">Skill</a></li>
                     <li><a href="#works">Works</a></li>
@@ -86,7 +86,7 @@
         <nav class="sp_nav">
             <div class="sp_nav_menu">
                 <ul>
-                    <li><a href="#top">Top</a></li>
+                    <li><a href="#top">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skill">Skill</a></li>
                     <li><a href="#works">Works</a></li>
@@ -350,9 +350,21 @@
             observer.observe(element);
         });
 
-        // FVアニメーション
+        // headerアニメーション
         (function () {
             const fh = document.querySelector('.header_wrap');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 800) {
+                    fh.classList.add('is-show');
+                } else {
+                    fh.classList.remove('is-show');
+                }
+            });
+        }());
+
+        // page_topボタンアニメーション
+        (function () {
+            const fh = document.querySelector('#page_top');
             window.addEventListener('scroll', () => {
                 if (window.pageYOffset > 800) {
                     fh.classList.add('is-show');
