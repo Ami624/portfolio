@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.typekit.net/kuw7orj.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -147,7 +149,7 @@
                             </svg>
                         </a>
                     </div>
-                    <p class="sp_copyright">&copy; Ami Umegawa 2025</p>
+                    <p class="menu_copyright">&copy; Ami Umegawa 2025</p>
                 </div>
             </div>
         </nav>
@@ -157,8 +159,8 @@
     <main class="content">
         <div class="top">
             <p class="main_text fade">余白でつくる、<br>ちょうどよさ。</p>
-            <p class="sub_text fade">ちょうどいい“間”があることで、見た人の心に、自然に届くデザイン。<br>
-                <span>「わかりやすさ」 と 「らしさ」 のバランスを余白でつくる。</span><br>
+            <p class="sub_text fade">ちょうどいい“間”があることで、<br class="sp_br">見た人の心に、自然に届くデザイン。<br>
+                <span>「わかりやすさ」 と 「らしさ」 のバランス<br class="sp_br">を余白でつくる。</span><br>
                 「余白」 ＝ 価値を生み出す空間。
             </p>
         </div>
@@ -169,10 +171,10 @@
                 <p class="job_titel">Web designer</p>
                 <p class="my_name">Ami Umegawa</p>
                 <p class="my_explanation">
-                    はじめまして、ご覧いただきありがとうございます。<br>
+                    はじめまして、<br class="sp_br">ご覧いただきありがとうございます。<br>
                     長崎県出身・京都府在住のWebデザイナー梅川愛実と申します。
                 </p>
-                <p class="my_explanation">「余白でつくる、 ちょうどよさ。」 をコンセプトに<br>
+                <p class="my_explanation">「余白でつくる、 ちょうどよさ。」 をコンセプトに
                     情報を整理し、伝えたいことがまっすぐ届くように。<br>
                     見た目の美しさだけでなく、構成や読みやすさまで丁寧に考えながら、
                     お客様の想いを ”カタチ” にしていくことを心がけています。
@@ -265,7 +267,7 @@
                     LP（ランディングページ）/ バナーデザイン<br>
                     名刺・チラシ作成も承っております。<br>
                     シンプルで余白を活かしたデザインが得意です。<br>
-                    ジャンルを問わず見る人の心に自然と届くデザインを作ります。
+                    ジャンルを問わず見る人の心に<br class="sp_br">自然と届くデザインを作ります。
                 </p>
                 <div class="skill_box">
                     <ul>
@@ -279,11 +281,11 @@
             <div class="skill_container">
                 <h3>Coding</h3>
                 <img src="./images/SVG/pc_icon.svg" alt="pcアイコン" class="pc_icon">
-                <p>HTML・CSSを用いてサイトをコーディングいたします。<br>
-                    JavaScript・jQueryを用いて動きのあるデザインも対応可。<br>
+                <p>HTML・CSSを用いてサイトを<br class="sp_br">コーディングいたします。<br>
+                    JavaScript・jQueryを用いて<br class="sp_br">動きのあるデザインも対応可。<br>
                     どんな媒体からでも見やすいレスポンシブにも対応し<br>
                     運用しやすいコードを丁寧に作ります。<br>
-                    デザインからコーディングまでトータルコーディネートいたします。
+                    デザインからコーディングまで<br class="sp_br">トータルコーディネートいたします。
                 </p>
                 <div class="skill_box coding">
                     <ul>
@@ -304,7 +306,7 @@
                 <h2><span>C</span>ontact</h2>
             </div>
             <p>ご質問・ご相談からでもお気軽にご連絡ください。<br>
-                必須項目をご入力の上、下記フォームよりお問い合わせください。<br>
+                必須項目をご入力の上、<br class="sp_br">下記フォームよりお問い合わせください。<br>
                 １２時間以内にお返事させていただきます。
             </p>
             <div class="contact_btn">
@@ -313,7 +315,7 @@
             <p class="contact_note">納品までの流れもご確認ください</p>
             <!-- <>は擬似要素で入れる -->
             <div class="contact_border"></div>
-            <p>公式LINEからのお問い合わせも受け付けております。<br>
+            <p>公式LINEからの<br class="sp_br">お問い合わせも受け付けております。<br>
                 そちらもご利用ください。
             </p>
             <div class="line_btn">
@@ -324,7 +326,12 @@
 
     <footer id="footer">
         <div></div>
+        <p class="sp_copyright">&copy; Ami Umegawa 2025</p>
     </footer>
+
+    <div>
+        <a href="#" id="page_top"></a>
+    </div>
 
     <script>
         // タイトルフェードイン
@@ -369,6 +376,8 @@
                 $('.sp_nav').fadeOut();
             })
         })
+
+
     </script>
 </body>
 

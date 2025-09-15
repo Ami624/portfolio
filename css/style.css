@@ -750,6 +750,10 @@ h1 {
     background: #666666;
 }
 
+.sp_copyright {
+    display: none;
+}
+
 
 
 
@@ -1194,7 +1198,6 @@ h1 {
 form {
     max-width: 613px;
     margin: 0 auto;
-    /* background: #f9f9f9; */
     border-radius: 8px;
 }
 
@@ -1235,6 +1238,34 @@ form button {
     margin-bottom: 90px;
 }
 
+.sp_br {
+    display: none;
+}
+
+#page_top {
+    position: fixed;
+    right: 1%;
+    bottom: 5%;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #666666;
+    padding: 8px;
+    opacity: 0.8;
+}
+
+#page_top::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f106';
+    font-size: 24px;
+    color: #666666;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+
 /* work5.html */
 .work5_body .content {
     padding-right: 10px;
@@ -1251,6 +1282,7 @@ form button {
 }
 
 .work5_body h2 {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     font-size: 24px;
     font-weight: 100;
     padding-bottom: 8px;
@@ -1317,6 +1349,10 @@ form button {
     padding-bottom: 8px;
     width: 100%;
     box-sizing: border-box;
+}
+
+#work5_box .work5_text p span {
+    font-weight: bold;
 }
 
 #work5_box .work5_text .work5_text_p p::before {
@@ -1454,6 +1490,7 @@ form button {
 }
 
 #work5_box .mock_set p {
+    font-size: 12px;
     padding-bottom: 144px;
     text-align: center;
 }
@@ -1597,7 +1634,7 @@ form button {
     .sp_sns_icon {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 40px;
     }
 
     .sp_sns_icon svg {
@@ -1605,7 +1642,7 @@ form button {
         width: 40px;
     }
 
-    .sp_copyright {
+    .menu_copyright {
         display: none;
     }
 
@@ -1631,7 +1668,7 @@ form button {
         justify-content: center;
         align-items: center;
         padding: 90px 0;
-        height: 70vh;
+        height: 80vh;
     }
 
     #fv .fly-in {
@@ -1859,7 +1896,7 @@ form button {
     }
 
     #skill .skill_box {
-        margin-bottom: 72px;
+        margin-bottom: 90px;
     }
 
     #skill .skill_box ul {
@@ -1898,6 +1935,18 @@ form button {
         width: 50%;
     }
 
+    .sp_copyright {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        color: #ffffff;
+        opacity: 0.8;
+        text-align: center;
+    }
+
+    /* .sp_br {
+        display: block;
+    } */
 
     /* about.html */
     .about_page .about_profile_img {
@@ -2081,4 +2130,10 @@ form button {
         padding-bottom: 144px;
     }
 
+}
+
+@media screen and (max-width: 560px) {
+    .sp_br {
+        display: block;
+    }
 }
