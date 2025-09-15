@@ -1691,7 +1691,7 @@ form button {
     #profile,
     #my_life,
     #policy {
-        margin-bottom: 54px;
+        margin-bottom: 88px;
     }
 
     #about {
@@ -1817,6 +1817,12 @@ form button {
 
     .top .sub_text {
         font-size: 16px;
+    }
+
+    #about,
+    #works,
+    #skill {
+        margin-bottom: 90px;
     }
 
     /* about */
