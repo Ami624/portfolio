@@ -304,6 +304,18 @@
             })
         })
 
+            // page_topボタンアニメーション
+            (function () {
+                const fh = document.querySelector('#page_top');
+                window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 800) {
+                        fh.classList.add('is-show');
+                    } else {
+                        fh.classList.remove('is-show');
+                    }
+                });
+            }());
+
         // スライダー
         const swiper = new Swiper(".swiper", {
             loop: true, // ループ
