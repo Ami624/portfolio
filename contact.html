@@ -199,13 +199,14 @@
                     <input type="text" id="companyname" name="entry.693440231">
 
                     <label for="name" class="required">お名前 / Name</label>
-                    <input type="text" id="name" name="entry.1972093412" required>
+                    <input type="text" id="name" name="entry.1972093412" placeholder="山田 太郎" required>
 
                     <label for="email" class="required">メールアドレス / Mail Address</label>
-                    <input type="email" id="email" name="entry.384658293" required>
+                    <input type="email" id="email" name="entry.384658293" placeholder="user@example.com" required>
 
                     <label for="message" class="required">お問い合わせ内容 / Massage</label>
-                    <textarea name="entry.2037006391" id="message" rows="5" required></textarea>
+                    <textarea name="entry.2037006391" id="message" rows="5" placeholder="お気軽にお問い合わせください"
+                        required></textarea>
 
                     <button type="submit">送信する</button>
                 </form>
@@ -225,9 +226,9 @@
         </section>
 
 
-        <div class="contact_btn_orange">
+        <!-- <div class="contact_btn_orange">
             <button type="button" onclick="location.href='./contact.html'">Contact</button>
-        </div>
+        </div> -->
     </main>
 
     <footer id="footer">
@@ -258,7 +259,7 @@
         // page_topボタンアニメーション
         const fh = document.querySelector('#page_top');
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 800) {
+            if (window.pageYOffset > 400) {
                 fh.classList.add('is-show');
             } else {
                 fh.classList.remove('is-show');

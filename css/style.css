@@ -246,7 +246,7 @@ h1 {
     }
 
     100% {
-        opacity: 0
+        opacity: 1;
     }
 }
 
@@ -1267,6 +1267,10 @@ form button {
     margin-bottom: 90px;
 }
 
+::placeholder {
+    color: #66666699;
+}
+
 
 /* work5.html */
 .work5_body .content {
@@ -1691,7 +1695,7 @@ form button {
     #profile,
     #my_life,
     #policy {
-        margin-bottom: 88px;
+        margin-bottom: 108px;
     }
 
     #about {
@@ -1750,12 +1754,12 @@ form button {
     }
 
     .sp_copyright {
-        display: flex;
-        justify-content: center;
+        display: block;
+        text-align: center;
         font-size: 10px;
         color: #ffffff;
         opacity: 0.6;
-        text-align: center;
+        padding-top: 8px;
     }
 
     /* about.html */
@@ -1951,9 +1955,10 @@ form button {
         width: 50%;
     }
 
-    /* .sp_br {
-        display: block;
-    } */
+    /* footer */
+    #footer {
+        height: 36px;
+    }
 
     /* about.html */
     .about_page .about_profile_img {
@@ -2013,6 +2018,10 @@ form button {
 
     #works .comment {
         font-size: 14px;
+    }
+
+    .contact_btn_orange {
+        margin-bottom: 90px;
     }
 
     .contact_btn_orange button {
