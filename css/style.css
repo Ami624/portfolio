@@ -1301,6 +1301,11 @@ form button {
     margin: 90px 0 18px 0;
 }
 
+.work5_body .content .work5_page .work3_mock,
+.work5_body .content .work5_page .work2_mock {
+    margin-bottom: 90px;
+}
+
 .work5_body .work5_page p {
     font-size: 12px;
     text-align: right;
