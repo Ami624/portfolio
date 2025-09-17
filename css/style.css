@@ -705,14 +705,14 @@ h1 {
 #contact .contact_btn button {
     font-size: 20px;
     font-weight: bold;
-    color: #ff701e;
+    color: #ffffff;
     width: 40%;
     background: #565555;
     /* border: 2px solid #000000; */
     padding: 10px 20px;
     margin-bottom: 36px;
     position: relative;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 #contact .contact_btn button::after {
@@ -721,7 +721,7 @@ h1 {
     top: 32%;
     right: 4%;
     border: 8px solid transparent;
-    border-left: 8px solid #ff701e;
+    border-left: 8px solid #ffffff;
 }
 
 #contact .contact_btn button:hover::after {
