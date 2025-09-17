@@ -266,7 +266,7 @@ h1 {
 .scrollbar p {
     font-size: 14px;
     position: absolute;
-    left: 80px;
+    left: 50px;
     top: 570px;
 }
 
@@ -794,7 +794,8 @@ h1 {
     font-weight: 900;
     content: '\f106';
     font-size: 24px;
-    color: #666666B3;
+    color: #f15A24B3;
+    /* color: #666666B3; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1807,6 +1808,9 @@ form button {
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 20px;
+        top: -20%;
+        left: -32%;
+        text-align: start;
     }
 
     h2 {
